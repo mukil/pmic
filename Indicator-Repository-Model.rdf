@@ -9,12 +9,12 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
   <owl:Ontology
-    rdf:about="http://purl.org/promut/repository/0.2/"
+    rdf:about="https://purl.org/promut/repository/0.2/"
     rdfs:label="ProMUT Indicator Repository Model"
     dc:description="Meta-model to model indicator-based sustainability assessments using RDF Schema 1.1 and the OWL 2."
     dc:creator="Malte Reißig (malte.reissig@iass-potsdam.de)"
     rdfs:comment="Fore more information please visit the promut project homepage at https://purl.org/promut/project"
-    rdfs:isDefinedBy="http://purl.org/promut/repository/">
+    rdfs:isDefinedBy="https://purl.org/promut/repository/">
     <owl:versionInfo>0.2-SNAPSHOT</owl:versionInfo>
   </owl:Ontology>
 
@@ -22,116 +22,124 @@
   <!-- Classes -->
 
   <owl:Class
-    rdf:about="http://purl.org/promut/repository/Indicator"
+    rdf:about="https://purl.org/promut/repository/Indicator"
     rdfs:label="Indicator"
     rdfs:comment="An indicator.">
     <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class" />
     <rdfs:subClassOf>
       <owl:Class rdf:about="https://schema.org/Intangible"/>
     </rdfs:subClassOf>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/IndicatorSet"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/SustainabilityDimension"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorSet"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/SustainabilityDimension"/>
   </owl:Class>
 
   <owl:Class
-    rdf:about="http://purl.org/promut/repository/IndicatorSet"
+    rdf:about="https://purl.org/promut/repository/IndicatorSet"
     rdfs:label="Indicator Set"
     rdfs:comment="A set of indicators representing a specific sustainability assessment.">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="https://schema.org/CreativeWork"/>
     </rdfs:subClassOf>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/Indicator"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/SustainabilityDimension"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/SustainabilityDimension"/>
   </owl:Class>
 
   <owl:Class
-    rdf:about="http://purl.org/promut/repository/IndicatorCategory"
+    rdf:about="https://purl.org/promut/repository/IndicatorCategory"
     rdfs:label="Indicator Category"
     rdfs:comment="The category an indicator was assigned within an indicator set.">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <owl:Class rdf:about="https://www.w3.org/2004/02/skos/core#Concept"/>
     </rdfs:subClassOf>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/Indicator"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/SustainabilityDimension"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorSet"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/SustainabilityDimension"/>
   </owl:Class>
 
   <owl:Class
-    rdf:about="http://purl.org/promut/repository/ReferenceFrame"
+    rdf:about="https://purl.org/promut/repository/ReferenceFrame"
     rdfs:label="Reference Frame"
     rdfs:comment="The reference frames of an Indicator or Indicator Set.">
     <rdfs:subClassOf>
       <owl:Class rdf:about="https://schema.org/CreativeWork"/>
-      <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <owl:Class rdf:about="https://www.w3.org/2004/02/skos/core#Concept"/>
     </rdfs:subClassOf>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/Indicator"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/IndicatorSet"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorSet"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/SustainabilityDimension"/>
   </owl:Class>
 
   <owl:Class
-    rdf:about="http://purl.org/promut/repository/SustainabilityDimension"
+    rdf:about="https://purl.org/promut/repository/SustainabilityDimension"
     rdfs:label="Sustainability Dimension"
     rdfs:comment="The concept of a sustainability dimension in organizations">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <owl:Class rdf:about="https://www.w3.org/2004/02/skos/core#Concept"/>
     </rdfs:subClassOf>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/Indicator"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/IndicatorSet"/>
-    <owl:disjointWith rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorSet"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+    <owl:disjointWith rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </owl:Class>
 
 
   <!-- Indicator Data Properties -->
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/IndicatorName"
+    rdf:about="https://purl.org/promut/repository/IndicatorName"
     rdfs:label="Indicator Name"
     rdfs:comment="The name of an indicator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:subPropertyOf rdf:resource="rdfs:label"/>
-    <rdfs:domain rdf:resource="http://purl.org/promut/repository/Indicator"/>
+    <rdfs:subPropertyOf rdf:resource="dc:title"/>
+    <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
   </rdf:Property>
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/IndicatorDescription"
+    rdf:about="https://purl.org/promut/repository/IndicatorDescription"
     rdfs:label="Indicator Description"
     rdfs:comment="The description of an indicator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#HTML"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdfs:domain rdf:resource="http://purl.org/promut/repository/Indicator"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#HTML"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdfs:subPropertyOf rdf:resource="dc:description"/>
+    <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
   </rdf:Property>
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/IndicatorObjective"
+    rdf:about="https://purl.org/promut/repository/IndicatorObjective"
     rdfs:label="Indicator Objective"
     rdfs:comment="The objective of an indicator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdfs:domain rdf:resource="http://purl.org/promut/repository/Indicator"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
   </rdf:Property>
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/IndicatorFormula"
+    rdf:about="https://purl.org/promut/repository/IndicatorFormula"
     rdfs:label="Indicator Formula"
     rdfs:comment="A mathematic formula to describe the calculation of an indicator in detail">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdfs:domain rdf:resource="http://purl.org/promut/repository/Indicator"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
   </rdf:Property>
 
 
@@ -139,137 +147,139 @@
   <!-- Indicator Set Data Properties -->
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/IndicatorSetName"
+    rdf:about="https://purl.org/promut/repository/IndicatorSetName"
     rdfs:label="Indicator Set Name"
     rdfs:comment="The name of an indicator set">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:subPropertyOf rdf:resource="rdfs:label"/>
-    <rdfs:domain rdf:resource="http://purl.org/promut/repository/IndicatorSet"/>
+    <rdfs:subPropertyOf rdf:resource="dc:title"/>
+    <rdfs:domain rdf:resource="https://purl.org/promut/repository/IndicatorSet"/>
   </rdf:Property>
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/IndicatorSetDescription"
+    rdf:about="https://purl.org/promut/repository/IndicatorSetDescription"
     rdfs:label="Indicator Set Description"
     rdfs:comment="The description of an indicator-set">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#HTML"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdfs:domain rdf:resource="http://purl.org/promut/repository/IndicatorSet"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#HTML"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdfs:subPropertyOf rdf:resource="dc:description"/>
+    <rdfs:domain rdf:resource="https://purl.org/promut/repository/IndicatorSet"/>
   </rdf:Property>
 
 
   <!-- Indicator Object Properties -->
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/MeasurementCycle"
+    rdf:about="https://purl.org/promut/repository/MeasurementCycle"
     rdfs:label="Measurement Cycle"
     rdfs:comment="The cycle of repeated measurement as a cronjob like time value">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdfs:domain rdf:resource="http://purl.org/promut/repository/Indicator"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
   </rdf:Property>
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/MeasurementUnit"
+    rdf:about="https://purl.org/promut/repository/MeasurementUnit"
     rdfs:label="Measurement Unit"
     rdfs:comment="The measurement unit of an indicator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdfs:domain rdf:resource="http://purl.org/promut/repository/Indicator"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
   </rdf:Property>
 
 
   <!-- Indicator and Indicator Set Instance Relations -->
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/partOf"
+    rdf:about="https://purl.org/promut/repository/partOf"
     rdfs:label="part Of"
     rdfs:comment="An indicator is part of an indicator set.">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Property>
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/hasDimension"
+    rdf:about="https://purl.org/promut/repository/hasDimension"
     rdfs:label="has Dimension"
     rdfs:comment="An indicator is associated with an Sustainability Dimension.">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Property>
 
   <rdf:Property
-    rdf:about="http://purl.org/promut/repository/hasReferenceFrame"
+    rdf:about="https://purl.org/promut/repository/hasReferenceFrame"
     rdfs:label="has Reference Frame"
     rdfs:comment="An indicator is related to an instance of (e.g. organizational) reference frames.">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/promut/repository/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Property>
 
 
   <!-- ProMUT Sustainability Dimensions -->
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Environmental">
-    <rdf:type rdf:resource="http://purl.org/promut/repository/SustainabilityDimension" />
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Environmental">
+    <rdf:type rdf:resource="https://purl.org/promut/repository/SustainabilityDimension" />
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Social">
-    <rdf:type rdf:resource="http://purl.org/promut/repository/SustainabilityDimension" />
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Social">
+    <rdf:type rdf:resource="https://purl.org/promut/repository/SustainabilityDimension" />
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Economical">
-    <rdf:type rdf:resource="http://purl.org/promut/repository/SustainabilityDimension" />
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Economical">
+    <rdf:type rdf:resource="https://purl.org/promut/repository/SustainabilityDimension" />
   </rdf:Description>
 
 
   <!-- ProMUT Reference Frames -->
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Human">
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Human">
     <rdfs:Label>Human</rdfs:Label>
     <rdfs:Label>"Mensch"@de</rdfs:Label>
-    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Resource">
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Resource">
     <rdfs:Label>Resource</rdfs:Label>
     <rdfs:Label>"Ressource"@de</rdfs:Label>
-    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Machine">
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Machine">
     <rdfs:Label>Machine</rdfs:Label>
     <rdfs:Label>"Maschine"@de</rdfs:Label>
-    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/LineCell">
+  <rdf:Description rdf:about="https://purl.org/promut/repository/LineCell">
     <rdfs:Label>Line/Cell</rdfs:Label>
-    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Factory">
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Factory">
     <rdfs:Label>Factory</rdfs:Label>
     <rdfs:Label>"Fabrik"@de</rdfs:Label>
-    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Enterprise">
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Enterprise">
     <rdfs:Label>Enterprise</rdfs:Label>
     <rdfs:Label>"Unternehmen"@de</rdfs:Label>
-    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Product">
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Product">
     <rdfs:Label>Product</rdfs:Label>
     <rdfs:Label>"Produkt"@de</rdfs:Label>
-    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Society">
+  <rdf:Description rdf:about="https://purl.org/promut/repository/Society">
     <rdfs:Label>Society</rdfs:Label>
     <rdfs:Label>"Gesellschaft"@de</rdfs:Label>
-    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
 
