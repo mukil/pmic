@@ -181,7 +181,7 @@
   </rdf:Property>
 
 
-  <!-- Indicator and Indicator Set Relations -->
+  <!-- Indicator and Indicator Set Instance Relations -->
 
   <rdf:Property
     rdf:about="http://purl.org/promut/repository/partOf"
@@ -208,7 +208,7 @@
   </rdf:Property>
 
 
-  <!-- ProMUT Indicator Repository Individual Classes -->
+  <!-- ProMUT Sustainability Dimensions -->
 
   <rdf:Description rdf:about="http://purl.org/promut/repository/Environmental">
     <rdf:type rdf:resource="http://purl.org/promut/repository/SustainabilityDimension" />
@@ -223,15 +223,17 @@
   </rdf:Description>
 
 
+  <!-- ProMUT Reference Frames -->
+
   <rdf:Description rdf:about="http://purl.org/promut/repository/Human">
     <rdfs:Label>Human</rdfs:Label>
     <rdfs:Label>"Mensch"@de</rdfs:Label>
     <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Product">
-    <rdfs:Label>Product</rdfs:Label>
-    <rdfs:Label>"Produkt"@de</rdfs:Label>
+  <rdf:Description rdf:about="http://purl.org/promut/repository/Resource">
+    <rdfs:Label>Resource</rdfs:Label>
+    <rdfs:Label>"Ressource"@de</rdfs:Label>
     <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
@@ -241,8 +243,8 @@
     <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://purl.org/promut/repository/Cell">
-    <rdfs:Label>Cell</rdfs:Label>
+  <rdf:Description rdf:about="http://purl.org/promut/repository/LineCell">
+    <rdfs:Label>Line/Cell</rdfs:Label>
     <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
@@ -255,6 +257,12 @@
   <rdf:Description rdf:about="http://purl.org/promut/repository/Enterprise">
     <rdfs:Label>Enterprise</rdfs:Label>
     <rdfs:Label>"Unternehmen"@de</rdfs:Label>
+    <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/promut/repository/Product">
+    <rdfs:Label>Product</rdfs:Label>
+    <rdfs:Label>"Produkt"@de</rdfs:Label>
     <rdf:type rdf:resource="http://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
 
