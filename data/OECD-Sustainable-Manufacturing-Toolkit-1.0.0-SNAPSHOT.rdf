@@ -1,0 +1,213 @@
+
+<rdf:RDF 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:pmir="https://purl.org/promut/repository/0.1/"
+  xmlns:dc="https://purl.org/dc/elements/1.1/">
+
+  <!-- OECD Sustainable Manufacturing Toolkit Indicator Set Description -->
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit">
+    <pmir:IndicatorSetName>OECD Sustainable Manufacturing Toolkit</pmir:IndicatorSetName>
+    <pmir:IndicatorSetDescription>
+      The OECD Sustainable Manufacturing Toolkit aims to provide a practical starting point for businesses
+      around the world to improve the efficiency of their production processes and products enabling them
+      to contribute to sustainable development and green growth. The Toolkit includes an internationally
+      applicable common set of indicators helping businesses measure their environmental performance at the
+      level of a plant or facility. This edition focuses on the environmental aspects of sustainable development.
+      This Toolkit has been developed with small and medium-sized manufacturing enterprises in mind. However,
+      the indicators and guidance can also be useful for any other size and type of organisation throughout the world.
+    </pmir:IndicatorSetDescription>
+    <dc:publisher>Organisation for Economic Co-operation and Development (OECD)</dc:publisher>
+    <dc:contributor>Tomoo Machiba, Project Management</dc:contributor>
+    <dc:contributor>Michael Bordt (Statistics Canada), Technical Development</dc:contributor>
+    <dc:contributor>Hirofumi Oima, Research</dc:contributor>
+    <dc:contributor>Changhyun Jeong, Research</dc:contributor>
+    <dc:contributor>Lucero Pérez Hernández, Research</dc:contributor>
+    <dc:contributor>Advisory Expert Group on Sustainable Manufacturing (Chair: Dr. Nabil Nasr, Rochester Institute of Technology), Expert Input</dc:contributor>
+    <dc:contributor>US Department of Commerce, Expert Input</dc:contributor>
+    <dc:source>Based on OECD (2011), OECD Sustainable Manufacturing Toolkit Start-up Guide: Seven steps to environmental excellence, https://www.oecd.org/innovation/green/toolkit/48704993.pdf</dc:source>
+    <dc:rights>(C) Copyright OECD 2011, "You are free to reproduce up to 30% of the Toolkit or up to 5 figures from this material, free of charge and without any written permission, provided the source is properly cited."</dc:rights>
+    <dc:date>2011</dc:date>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/IndicatorSet"/>
+  </rdf:Description>
+
+  <!-- OECD Sustainable Manufacturing Indicator Categories -->
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Inputs">
+    <dc:title>Inputs</dc:title>
+    <dc:title>"Input"@de</dc:title>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations">
+    <dc:title>Operations</dc:title>
+    <dc:title>"Betrieb"@de</dc:title>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products">
+    <dc:title>Products</dc:title>
+    <dc:title>"Produkte"@de</dc:title>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+  </rdf:Description>
+
+
+  <!-- Input Indicators -->
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Inputs1">
+    <pmir:IndicatorName>Non-renewable materials intensity of inputs</pmir:IndicatorName>
+    <pmir:IndicatorDescription>Your use of materials in finite supply as a proportion of your production. Materials collected for each input are D1, D2 and D3.</pmir:IndicatorDescription>
+    <pmir:IndicatorFormula>Weight of non-renewable resources consumed (t) / Normalizaton factor</pmir:IndicatorFormula>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/i1non-renewablematerialsintensityofinputs.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Inputs2">
+    <pmir:IndicatorName>Restricted substances intensity of inputs</pmir:IndicatorName>
+    <pmir:IndicatorDescription>Your use of substances restricted by law as a proportion of your problem. Materials collected for each input are D1, D2 and D4.</pmir:IndicatorDescription>
+    <pmir:IndicatorFormula>Weight of restricted substances consumed (t) / Normalization factor</pmir:IndicatorFormula>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/i2restrictedsubstancesintensityofinputs.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Inputs3">
+    <pmir:IndicatorName>Recycled/reused content of non-energy material inputs</pmir:IndicatorName>
+    <pmir:IndicatorDescription>Your use of recycled material and reused materials as a proportion of overall materials used. Materials collected for each input are D1, D2, D5 and D6.</pmir:IndicatorDescription>
+    <pmir:IndicatorFormula> (Total weight of recycled material + Total weight of reused material) / Total weight of material inputs x 100</pmir:IndicatorFormula>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/i3recycledreusedcontentofnon-energymaterialinputs.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+  </rdf:Description>
+
+  <!-- Operations Indicators -->
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations1">
+    <pmir:IndicatorName>Water intensity</pmir:IndicatorName>
+    <pmir:IndicatorDescription>Note: Indicators O1, O2 and O4 can be extended to measure the impact associated with your supply chain
+    as well as your facility: namely, water and energy consumed and greenhouse gas emissions caused during
+    the production of inputs</pmir:IndicatorDescription>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o1waterintensity.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations2">
+    <pmir:IndicatorName>Energy intensity</pmir:IndicatorName>
+    <pmir:IndicatorDescription>Note: Indicators O1, O2 and O4 can be extended to measure the impact associated with your supply chain
+    as well as your facility: namely, water and energy consumed and greenhouse gas emissions caused during
+    the production of inputs</pmir:IndicatorDescription>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o2energyintensity.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations3">
+    <pmir:IndicatorName>Renewable proption of energy</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o3renewableproportionofenergyconsumed.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations4">
+    <pmir:IndicatorName>Greenhouse gas intensity</pmir:IndicatorName>
+    <pmir:IndicatorDescription>Note: Indicators O1, O2 and O4 can be extended to measure the impact associated with your supply chain
+    as well as your facility: namely, water and energy consumed and greenhouse gas emissions caused during
+    the production of inputs</pmir:IndicatorDescription>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o4greenhousegasintensity.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations5a">
+    <pmir:IndicatorName>Residuals intensity (mass balance approach)</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o5residualsintensity.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations5b">
+    <pmir:IndicatorName>Residuals intensity (waste output approach)</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o5residualsintensity.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations6">
+    <pmir:IndicatorName>Air releases intensity</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o6intensityofresidualreleasestoair.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations7">
+    <pmir:IndicatorName>Water releases intensity</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o7intensityofresidualreleasestosurfacewater.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations8">
+    <pmir:IndicatorName>Proportion of natural land</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/o8proportionoflandoccupiedthatisnaturalcover.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+  </rdf:Description>
+
+  <!-- Products Indicators -->
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products1">
+    <pmir:IndicatorName>Recycled/reused content</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/p1recycledreusedcontentofproducts.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products2">
+    <pmir:IndicatorName>Recyclability</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/p2recyclabilityofproducts.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products3">
+    <pmir:IndicatorName>Renewable materials content</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/p3renewablematerialscontentofproducts.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products4">
+    <pmir:IndicatorName>Non-renewable materials intensity</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/p4non-renewablematerialsintensityoverproductlifetime.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products5">
+    <pmir:IndicatorName>Restricted substances content</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/p5restrictedsubstancescontentofproducts.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products6">
+    <pmir:IndicatorName>Energy consumption intensity</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/p6intensityofenergyconsumptionofproducts.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products7">
+    <pmir:IndicatorName>Greenhouse gas emissions intensity</pmir:IndicatorName>
+    <dc:source>https://www.oecd.org/innovation/green/toolkit/p7intensityofgreenhousegasemissionsfromproducts.htm</dc:source>
+    <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
+    <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+  </rdf:Description>
+
+</rdf:RDF>
+
