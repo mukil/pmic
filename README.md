@@ -12,7 +12,7 @@ Designated contents of the ProMUT Indicator Repository are indicator sets which 
 1. Applicable for assessing the sustainability of manufacturing organizations.
 1. Published accessibly in some form of document and with a complete description of all indicators.
 1. Content imposes no legal restrictions which are in conflict with the principles of LOD, in particular allowing the contents redistribution.
-1. 
+1. TBD.
 
 The following _Indicator Sets_ are currently analyzed in depth and transformed into LOD to be included in the repository:
 
@@ -85,9 +85,11 @@ The [Junior Research Group “ProMUT”](https://purl.org/promut) (grant number:
 
 # License
 
-The ProMUT Indicator Repository Model is available freely under the GNU Affero General Public License, version 3.
+The `Indicator-Repository-Model.rdf` is available freely under the GNU Affero General Public License, version 3.
 
-Whereever third party content is incorporated in the ProMUT Indicator Repository it is licensed under the original license provided by the owner of the applicable content. Third party content in the repository are the respective _Indicator Sets_.
+Other RDF contents (`.rdf` files) in this repository are licensed under the original license provided by the owner of the applicable content. The owner of the applicable content is the following, as denoted in the penultimate part of each concepts URI:
+
+* Every concept in the namespace `https://purl.org/promut/repository/oecd/` is based on the "OECD (2011), OECD Sustainable Manufacturing Toolkit Start-up Guide: Seven steps to environmental excellence, https://www.oecd.org/innovation/green/toolkit/48704993.pdf".
 
 # Copyright
 
