@@ -62,6 +62,7 @@
     <pmir:IndicatorName>Non-renewable materials intensity of inputs</pmir:IndicatorName>
     <pmir:IndicatorDescription>Your use of materials in finite supply as a proportion of your production. Materials collected for each input are D1, D2 and D3.</pmir:IndicatorDescription>
     <pmir:IndicatorFormula>Weight of non-renewable resources consumed (t) / Normalizaton factor</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>tonnes</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/i1non-renewablematerialsintensityofinputs.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
@@ -72,6 +73,7 @@
     <pmir:IndicatorName>Restricted substances intensity of inputs</pmir:IndicatorName>
     <pmir:IndicatorDescription>Your use of substances restricted by law as a proportion of your problem. Materials collected for each input are D1, D2 and D4.</pmir:IndicatorDescription>
     <pmir:IndicatorFormula>Weight of restricted substances consumed (t) / Normalization factor</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>tonnes</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/i2restrictedsubstancesintensityofinputs.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
@@ -81,7 +83,8 @@
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Inputs3">
     <pmir:IndicatorName>Recycled/reused content of non-energy material inputs</pmir:IndicatorName>
     <pmir:IndicatorDescription>Your use of recycled material and reused materials as a proportion of overall materials used. Materials collected for each input are D1, D2, D5 and D6.</pmir:IndicatorDescription>
-    <pmir:IndicatorFormula> (Total weight of recycled material + Total weight of reused material) / Total weight of material inputs x 100</pmir:IndicatorFormula>
+    <pmir:IndicatorFormula>(Total weight of recycled material + Total weight of reused material) / Total weight of material inputs x 100</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>percent</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/i3recycledreusedcontentofnon-energymaterialinputs.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
@@ -95,6 +98,8 @@
     <pmir:IndicatorDescription>Note: Indicators O1, O2 and O4 can be extended to measure the impact associated with your supply chain
     as well as your facility: namely, water and energy consumed and greenhouse gas emissions caused during
     the production of inputs</pmir:IndicatorDescription>
+    <pmir:IndicatorFormula>Total water intake / Normalisation factor</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>m3</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o1waterintensity.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
@@ -107,6 +112,8 @@
     <pmir:IndicatorDescription>Note: Indicators O1, O2 and O4 can be extended to measure the impact associated with your supply chain
     as well as your facility: namely, water and energy consumed and greenhouse gas emissions caused during
     the production of inputs</pmir:IndicatorDescription>
+    <pmir:IndicatorFormula>(Energy consumed in production processes + Energy consumed in overhead) / Normalisation factor </pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>MJ</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o2energyintensity.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
@@ -116,6 +123,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations3">
     <pmir:IndicatorName>Renewable proption of energy</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Renewable energy consumed / Total energy consumed x 100</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>percent</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o3renewableproportionofenergyconsumed.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
@@ -127,6 +136,12 @@
     <pmir:IndicatorDescription>Note: Indicators O1, O2 and O4 can be extended to measure the impact associated with your supply chain
     as well as your facility: namely, water and energy consumed and greenhouse gas emissions caused during
     the production of inputs</pmir:IndicatorDescription>
+    <pmir:IndicatorFormula>GHGs released in energy consumption for production
+      + GHGs released in energy consumption for overhead
+      + GHGs released by transport used for business travel
+      + Additional GHGs released from production process)
+      / Normalisation factor</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>tCO2e</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o4greenhousegasintensity.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
@@ -136,6 +151,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations5a">
     <pmir:IndicatorName>Residuals intensity (mass balance approach)</pmir:IndicatorName>
+    <pmir:IndicatorFormula>(Weights of all inputs + Weight of fuel consumed – Weight of all products) / Normalisation factor</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>tonnes</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o5residualsintensity.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
@@ -144,6 +161,20 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations5b">
     <pmir:IndicatorName>Residuals intensity (waste output approach)</pmir:IndicatorName>
+    <pmir:IndicatorFormula>(Weight of releases [from production processes and, if available, overhead] to air 
+      + Weight of releases to surface water
+      + Weight of releases to land
+      + Weight of releases from landfills
+      + Weight of transfers to disposal
+      + Weight of transfers for treatment
+      + Weight of transfers to recycling
+      + Weight of transfers for energy recovery
+      + Weight of transfers to sewage
+      + Weight of additional GHGs produced
+      + Carbon content of direct energy use)
+      / Normalisation factor
+    </pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>tonnes</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o5residualsintensity.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
@@ -152,6 +183,12 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations6">
     <pmir:IndicatorName>Air releases intensity</pmir:IndicatorName>
+    <pmir:IndicatorDescription>Although releases to air are included in the overall residuals intensity indicator (O5), they are of specific interest because they are often implicated in environmental or human health issues. For example, sulphur dioxide (SO2) from industrial processes and fossil fuel combustion contribute to acid rain. Ground level ozone and fine particulate matter contribute to the formation of smog, aggravating respiratory and cardiac conditions.
+
+The indicator represents the intensity of the weight of all releases to air during the reference year. Although it might be difficult or insignificant to track, it is recommended to track the releases to air from overhead as well as production processes.</pmir:IndicatorDescription>
+    <pmir:IndicatorFormula>Weight of releases [from production processes and, if available, overhead] to air / Normalisation factor</pmir:IndicatorFormula>
+    <pmir:MeasurementCycle>year</pmir:MeasurementCycle>
+    <pmir:MeasurementUnit>tonnes</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o6intensityofresidualreleasestoair.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
@@ -160,6 +197,9 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations7">
     <pmir:IndicatorName>Water releases intensity</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Weight of releases [from production processes and, if available, overhead] to surface water / Normalisation factor</pmir:IndicatorFormula>
+    <pmir:MeasurementCycle>year</pmir:MeasurementCycle>
+    <pmir:MeasurementUnit>tonnes</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o7intensityofresidualreleasestosurfacewater.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
@@ -168,6 +208,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations8">
     <pmir:IndicatorName>Proportion of natural land</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Natural cover area / Total land area x 100</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>percent</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o8proportionoflandoccupiedthatisnaturalcover.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
@@ -178,6 +220,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products1">
     <pmir:IndicatorName>Recycled/reused content</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Sum for each product {(Weight of a product unit x Proportion of recycled content x Units produced) + (Weight of a product unit x Proportion of reused content x Units produced)} / Sum for each product (Weight of a product unit x Units produced) x 100</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>percent</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p1recycledreusedcontentofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
@@ -186,6 +230,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products2">
     <pmir:IndicatorName>Recyclability</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Sum for each product (Weight of a product unit x Proportion of recyclable content x Units produced) / Sum for each product (Weight of a product unit x Units produced) x 100</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>percent</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p2recyclabilityofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
@@ -194,6 +240,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products3">
     <pmir:IndicatorName>Renewable materials content</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Sum for each product (Weight of a product unit x Proportion of renewable materials in product x Units produced) / Sum for each product (Weight of a product unit x Units produced) x 100</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>percent</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p3renewablematerialscontentofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
@@ -202,6 +250,9 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products4">
     <pmir:IndicatorName>Non-renewable materials intensity</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Sum for each product [(Weight of a product unit x Proportion of non-renewable content x Units produced) / Expected lifetime of product}</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>tonnes</pmir:MeasurementUnit>
+    <pmir:MeasurementCycle>year</pmir:MeasurementCycle>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p4non-renewablematerialsintensityoverproductlifetime.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
@@ -210,6 +261,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products5">
     <pmir:IndicatorName>Restricted substances content</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Sum for each product (Weight of a product unit x Proportion of restricted substances in product x Units produced) / Sum for each product (Weight of a product unit x Units produced) x 100</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>percent</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p5restrictedsubstancescontentofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
@@ -218,6 +271,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products6">
     <pmir:IndicatorName>Energy consumption intensity</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Sum for each product (Average annual energy consumption of a product unit x Units produced) / Normalisation factor</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>MJ</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p6intensityofenergyconsumptionofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
@@ -226,6 +281,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products7">
     <pmir:IndicatorName>Greenhouse gas emissions intensity</pmir:IndicatorName>
+    <pmir:IndicatorFormula>Sum for each product (Average annual GHG emissions per product unit x Units produced) / Normalisation factor</pmir:IndicatorFormula>
+    <pmir:MeasurementUnit>tCO2e</pmir:MeasurementUnit>
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p7intensityofgreenhousegasemissionsfromproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
