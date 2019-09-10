@@ -194,17 +194,17 @@
   <!-- Indicator and Indicator Set Instance Relations -->
 
   <rdf:Property
-    rdf:about="https://purl.org/promut/repository/hasDimension"
-    rdfs:label="has Dimension"
-    rdfs:comment="An indicator is associated with an Sustainability Dimension.">
+    rdf:about="https://purl.org/promut/repository/sustainabilityDimension"
+    rdfs:label="sustainabilityDimension"
+    rdfs:comment="Indicator Sets or Indicators can be associated with a Sustainability Dimension.">
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Property>
 
   <rdf:Property
-    rdf:about="https://purl.org/promut/repository/hasReferenceFrame"
-    rdfs:label="has Reference Frame"
-    rdfs:comment="An indicator is related to an instance of (e.g. organizational) reference frames.">
+    rdf:about="https://purl.org/promut/repository/referenceFrame"
+    rdfs:label="referenceFrame"
+    rdfs:comment="Índicator Sets or Indicators can be related to an instance of (e.g. organizational) reference frames.">
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Property>
