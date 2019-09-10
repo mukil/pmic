@@ -2,7 +2,8 @@
 <rdf:RDF 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
   xmlns:pmir="https://purl.org/promut/repository/0.1/"
-  xmlns:dc="https://purl.org/dc/elements/1.1/">
+  xmlns:dc="https://purl.org/dc/elements/1.1/"
+  xmlns:sph="http://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/part.owl">
 
   <!-- OECD Sustainable Manufacturing Toolkit Indicator Set Description -->
 
@@ -37,18 +38,21 @@
     <dc:title>Inputs</dc:title>
     <dc:title>"Input"@de</dc:title>
     <rdf:type rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations">
     <dc:title>Operations</dc:title>
     <dc:title>"Betrieb"@de</dc:title>
     <rdf:type rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products">
     <dc:title>Products</dc:title>
     <dc:title>"Produkte"@de</dc:title>
     <rdf:type rdf:resource="https://purl.org/promut/repository/IndicatorCategory"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
 
@@ -61,6 +65,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/i1non-renewablematerialsintensityofinputs.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Inputs2">
@@ -70,6 +75,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/i2restrictedsubstancesintensityofinputs.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Inputs3">
@@ -79,6 +85,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/i3recycledreusedcontentofnon-energymaterialinputs.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <!-- Operations Indicators -->
@@ -92,6 +99,7 @@
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+    <pmir:IndicatorSet rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations2">
@@ -103,6 +111,7 @@
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations3">
@@ -110,6 +119,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o3renewableproportionofenergyconsumed.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations4">
@@ -121,6 +131,7 @@
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Inputs"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations5a">
@@ -128,6 +139,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o5residualsintensity.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations5b">
@@ -135,6 +147,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o5residualsintensity.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations6">
@@ -142,6 +155,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o6intensityofresidualreleasestoair.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations7">
@@ -149,6 +163,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o7intensityofresidualreleasestosurfacewater.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations8">
@@ -156,6 +171,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/o8proportionoflandoccupiedthatisnaturalcover.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Operations"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <!-- Products Indicators -->
@@ -165,6 +181,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p1recycledreusedcontentofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products2">
@@ -172,6 +189,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p2recyclabilityofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products3">
@@ -179,6 +197,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p3renewablematerialscontentofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products4">
@@ -186,6 +205,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p4non-renewablematerialsintensityoverproductlifetime.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products5">
@@ -193,6 +213,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p5restrictedsubstancescontentofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products6">
@@ -200,6 +221,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p6intensityofenergyconsumptionofproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Products7">
@@ -207,6 +229,7 @@
     <dc:source>https://www.oecd.org/innovation/green/toolkit/p7intensityofgreenhousegasemissionsfromproducts.htm</dc:source>
     <rdf:type rdf:resource="https://purl.org/promut/repository/Indicator"/>
     <pmir:IndicatorCategory rdf:resource="https://purl.org/promut/repository/oecd/Products"/>
+    <sph:partOf rdf:resource="https://purl.org/promut/repository/oecd/SustainableManufacturingToolkit"/>
   </rdf:Description>
 
 </rdf:RDF>
