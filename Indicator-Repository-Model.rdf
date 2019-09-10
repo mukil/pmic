@@ -28,6 +28,7 @@
     <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class" />
     <rdfs:subClassOf>
       <owl:Class rdf:about="https://schema.org/Intangible"/>
+      <owl:Class rdf:about="https://www.w3.org/2004/02/skos/core#Concept"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <owl:disjointWith rdf:resource="https://purl.org/promut/repository/IndicatorSet"/>
@@ -103,7 +104,6 @@
     rdf:about="https://purl.org/promut/repository/IndicatorName"
     rdfs:label="Indicator Name"
     rdfs:comment="The name of an indicator">
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:subPropertyOf rdf:resource="rdfs:label"/>
@@ -115,7 +115,6 @@
     rdf:about="https://purl.org/promut/repository/IndicatorDescription"
     rdfs:label="Indicator Description"
     rdfs:comment="The description of an indicator">
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#HTML"/>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:subPropertyOf rdf:resource="dc:description"/>
@@ -126,7 +125,6 @@
     rdf:about="https://purl.org/promut/repository/IndicatorObjective"
     rdfs:label="Indicator Objective"
     rdfs:comment="The objective of an indicator">
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
@@ -136,12 +134,10 @@
     rdf:about="https://purl.org/promut/repository/IndicatorFormula"
     rdfs:label="Indicator Formula"
     rdfs:comment="A mathematic formula to describe the calculation of an indicator in detail">
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
   </rdf:Property>
-
 
 
   <!-- Indicator Set Data Properties -->
@@ -150,7 +146,6 @@
     rdf:about="https://purl.org/promut/repository/IndicatorSetName"
     rdfs:label="Indicator Set Name"
     rdfs:comment="The name of an indicator set">
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#PlainLiteral"/>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:subPropertyOf rdf:resource="rdfs:label"/>
@@ -162,7 +157,6 @@
     rdf:about="https://purl.org/promut/repository/IndicatorSetDescription"
     rdfs:label="Indicator Set Description"
     rdfs:comment="The description of an indicator-set">
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#HTML"/>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:subPropertyOf rdf:resource="dc:description"/>
