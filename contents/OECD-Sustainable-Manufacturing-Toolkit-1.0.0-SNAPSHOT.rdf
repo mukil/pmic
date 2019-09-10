@@ -15,9 +15,19 @@
       to contribute to sustainable development and green growth. The Toolkit includes an internationally
       applicable common set of indicators helping businesses measure their environmental performance at the
       level of a plant or facility. This edition focuses on the environmental aspects of sustainable development.
-      This Toolkit has been developed with small and medium-sized manufacturing enterprises in mind. However,
-      the indicators and guidance can also be useful for any other size and type of organisation throughout the world.
+
+      This Toolkit introduces and provides advice on 18 of the most important and commonly applicable quantitative indicators
+      for environmental performance that will help evaluate and drive performance at your facilities.
+
+      These indicators have been developed to help measure the environmental impact relating to the production activities
+      of a single facility in your business (e.g. site, factory, office) as a starting point for sustainable manufacturing.
+      However, you can also monitor and evaluate the performance at the overall organisational level by aggregating the data
+      obtained to calculate the indicators.
     </pmir:IndicatorSetDescription>
+    <pmir:sustainabilityDimension rdf:resource="https://purl.org/promut/repository/Environmental"/>
+    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Product">
+    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Factory">
+    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Enterprise">
     <dc:publisher>Organisation for Economic Co-operation and Development (OECD)</dc:publisher>
     <dc:contributor>Tomoo Machiba, Project Management</dc:contributor>
     <dc:contributor>Michael Bordt (Statistics Canada), Technical Development</dc:contributor>
