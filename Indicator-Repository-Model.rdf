@@ -6,7 +6,8 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xmlns:pmir="https://purl.org/promut/repository/0.1/"
   xmlns:dc="https://purl.org/dc/elements/1.1/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:sph="http://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/part.owl">
 
   <owl:Ontology
     rdf:about="https://purl.org/promut/repository/0.2/"
@@ -17,7 +18,6 @@
     rdfs:isDefinedBy="https://purl.org/promut/repository/">
     <owl:versionInfo>0.2-SNAPSHOT</owl:versionInfo>
   </owl:Ontology>
-
 
   <!-- Classes -->
 
@@ -194,14 +194,6 @@
   <!-- Indicator and Indicator Set Instance Relations -->
 
   <rdf:Property
-    rdf:about="https://purl.org/promut/repository/partOf"
-    rdfs:label="part Of"
-    rdfs:comment="An indicator is part of an indicator set.">
-    <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Property>
-
-  <rdf:Property
     rdf:about="https://purl.org/promut/repository/hasDimension"
     rdfs:label="has Dimension"
     rdfs:comment="An indicator is associated with an Sustainability Dimension.">
@@ -281,7 +273,6 @@
     <rdfs:Label>"Gesellschaft"@de</rdfs:Label>
     <rdf:type rdf:resource="https://purl.org/promut/repository/ReferenceFrame"/>
   </rdf:Description>
-
 
 </rdf:RDF>
 
