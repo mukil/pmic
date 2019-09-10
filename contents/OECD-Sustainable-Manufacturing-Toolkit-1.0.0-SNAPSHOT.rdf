@@ -1,7 +1,7 @@
 
 <rdf:RDF 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-  xmlns:pmir="https://purl.org/promut/repository/0.1/"
+  xmlns:pmir="https://purl.org/promut/repository/0.2/"
   xmlns:dc="https://purl.org/dc/elements/1.1/"
   xmlns:sph="http://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/part.owl">
 
@@ -25,9 +25,9 @@
       obtained to calculate the indicators.
     </pmir:IndicatorSetDescription>
     <pmir:sustainabilityDimension rdf:resource="https://purl.org/promut/repository/Environmental"/>
-    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Product">
-    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Factory">
-    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Enterprise">
+    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Product" />
+    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Factory" />
+    <pmir:referenceFrame rdf:resource="https://purl.org/promut/repository/Enterprise" />
     <dc:publisher>Organisation for Economic Co-operation and Development (OECD)</dc:publisher>
     <dc:contributor>Tomoo Machiba, Project Management</dc:contributor>
     <dc:contributor>Michael Bordt (Statistics Canada), Technical Development</dc:contributor>
