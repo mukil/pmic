@@ -193,9 +193,8 @@
 
   <rdf:Description rdf:about="https://purl.org/promut/repository/oecd/Operations6">
     <pmir:IndicatorName>Air releases intensity</pmir:IndicatorName>
-    <pmir:IndicatorDescription>Although releases to air are included in the overall residuals intensity indicator (O5), they are of specific interest because they are often implicated in environmental or human health issues. For example, sulphur dioxide (SO2) from industrial processes and fossil fuel combustion contribute to acid rain. Ground level ozone and fine particulate matter contribute to the formation of smog, aggravating respiratory and cardiac conditions.
-
-The indicator represents the intensity of the weight of all releases to air during the reference year. Although it might be difficult or insignificant to track, it is recommended to track the releases to air from overhead as well as production processes.</pmir:IndicatorDescription>
+    <pmir:IndicatorDescription>Although releases to air are included in the overall residuals intensity indicator (O5), they are of  specific interest because they are often implicated in environmental or human health issues. For example, sulphur dioxide (SO2) from industrial processes and fossil fuel combustion contribute to acid rain. Ground level ozone and fine particulate matter contribute to the formation of smog, aggravating respiratory and cardiac conditions.
+      The indicator represents the intensity of the weight of all releases to air during the reference year. Although it might be difficult or insignificant to track, it is recommended to track the releases to air from overhead as well as production processes.</pmir:IndicatorDescription>
     <pmir:IndicatorFormula>Weight of releases [from production processes and, if available, overhead] to air / Normalisation factor</pmir:IndicatorFormula>
     <pmir:MeasurementCycle>year</pmir:MeasurementCycle>
     <pmir:MeasurementUnit>tonnes</pmir:MeasurementUnit>
