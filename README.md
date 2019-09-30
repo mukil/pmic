@@ -20,7 +20,7 @@ The following _Indicator Sets_ are currently analyzed in depth and transformed i
 
 ## Preliminary User Roles
 
-![Initial set of user roles for the ProMUT Indicator Repository](https://gitlab.iass.lcl/mrg/pmir/blob/master/proposal-user-groups-and-tasks.png)
+![Initial set of user roles for the ProMUT Indicator Repository](https://gitlab.iass.lcl/mrg/pmir/raw/master/proposal-user-groups-and-tasks.png?inline=false)
 
 ## Linked Open Data
 
