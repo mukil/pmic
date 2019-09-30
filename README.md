@@ -18,6 +18,10 @@ The following _Indicator Sets_ are currently analyzed in depth and transformed i
 
 * [OECD Sustainable Manufacturing Toolkit](https://www.oecd.org/innovation/green/toolkit/oecdsustainablemanufacturingindicators.htm) (2011)
 
+## Preliminary User Roles
+
+![Initial set of user roles for the ProMUT Indicator Repository](https://gitlab.iass.lcl/mrg/pmir/blob/master/proposal-user-groups-and-tasks.png)
+
 ## Linked Open Data
 
 Linked Open Data is open data that uses the Linked Data Principles ([Berners-Lee, 2006](https://www.w3.org/DesignIssues/LinkedData.html)):
