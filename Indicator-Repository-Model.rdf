@@ -27,7 +27,9 @@
     rdfs:comment="An indicator.">
     <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class" />
     <rdfs:subClassOf>
-      <owl:Class rdf:about="https://schema.org/Intangible"/>
+      <owl:Class rdf:about="https://schema.org/CreativeWork"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
       <owl:Class rdf:about="https://www.w3.org/2004/02/skos/core#Concept"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
@@ -73,6 +75,8 @@
     rdfs:comment="The reference frames of an Indicator or Indicator Set.">
     <rdfs:subClassOf>
       <owl:Class rdf:about="https://schema.org/CreativeWork"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
       <owl:Class rdf:about="https://www.w3.org/2004/02/skos/core#Concept"/>
     </rdfs:subClassOf>
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
@@ -138,7 +142,6 @@
     <rdfs:isDefinedBy rdf:resource="https://purl.org/promut/repository/"/>
     <rdfs:domain rdf:resource="https://purl.org/promut/repository/Indicator"/>
   </rdf:Property>
-
 
   <!-- Indicator Set Data Properties -->
 
