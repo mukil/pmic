@@ -1,30 +1,56 @@
 
-# ProMUT Indicator Repository
+# ProMUT Manufacturing Indicator Catalog
 
-The ProMUT Indicator Repository is a Linked Open Data (LOD) set to integrate various indicator-based sustainability assessment “tools” through introducing an organizational sustainability dimension along with topical clustering.
+The ProMUT Manufacturing Indicator Catalog is a Linked Open Data (LOD) set to integrate and relate indicators across various sustainability assessment “tools” through introducing common reference frames and relational semantics.
 
-It is collaborative research & development effort to tackle address a set of research gaps. The initial idea for this repository was developed as a contribution to the [EnvirInfo 2019](https://enviroinfo2019.org/) workshop on the [Future of Environmental Informatics Research from the Perspective of Young Researchers](https://enviroinfo2019.org/workshops/#track3).
+It is collaborative research & development effort to adress a set of research gaps. The initial idea for this repository was developed as a contribution to the [EnvirInfo 2019](https://enviroinfo2019.org/) workshop on the [Future of Environmental Informatics Research from the Perspective of Young Researchers](https://enviroinfo2019.org/workshops/#track3).
 
-## ProMUT Content Criteria
+## Content Selection Criteria
 
 Designated contents of the ProMUT Indicator Repository are indicator sets which embrace the legal aspects of this repository and meet the following four criteria:
 
-1. Applicable for assessing the sustainability of manufacturing organizations.
-1. Published accessibly in some form of document and with a complete description of all indicators.
-1. Content imposes no legal restrictions which are in conflict with the principles of LOD, in particular allowing the contents redistribution.
+1. Contains indicators applicable for assessing the sustainability of manufacturing processes or manufactured products.
+1. Published accessibly in some form of document and with a complete description of all indicators (or the will to do so here).
+1. Content imposes no legal restrictions conflicting with the principles of LOD, in particular allowing the contents redistribution.
 1. TBD.
 
 The following _Indicator Sets_ are currently analyzed in depth and transformed into LOD to be included in the repository:
 
 * [OECD Sustainable Manufacturing Toolkit](https://www.oecd.org/innovation/green/toolkit/oecdsustainablemanufacturingindicators.htm) (2011)
+* [GRI Standard + Sector Specifics](https://www.globalreporting.org/standards/gri-standards-download-center)
+* [EMAS III Core Indicators](https://www.emas.de/fileadmin/user_upload/06_service/PDF-Dateien/UGA_Infosheet_Indicators.pdf) (2019)
+
+## Submissions
+
+The following _Indicator Sets_ are currently in review for their potential inclusion into this repository:
+* [GWÖ Matrix](https://www.ecogood.org/de/unsere-arbeit/gemeinwohl-bilanz/gemeinwohl-matrix/)
+* [ISO 14955 - Environmental evaluation of machine tools](https://www.beuth.de/en/standard/iso-14955-1/282481423)
+* [GWÖ Matrix](https://www.ecogood.org/de/unsere-arbeit/gemeinwohl-bilanz/gemeinwohl-matrix/)
+* Dow Jones Sustainability Index
+* ITT Flygt Sustainability Index
+* Composite Sustainable Development Index
+* GM Metrics for Sustainable Manufacturing
+* Standard Guide for Characterizing Environmental Aspects of Manufacturing Processes, 2016.
+* A. Brown, J. Amundson, and F. Badurdeen, “Sustainable value stream mapping (Sus-VSM) in different manufacturing system configurations: Application case studies,” Journal of Cleaner Production, vol. 85, pp. 164–179, 2014.
+* J. R. Duflou et al., “Towards energy and resource efficient manufacturing: A processes and systems approach,” CIRP Annals, vol. 61, no. 2, pp. 587–609, 2012.
+* A. Huang and F. Badurdeen, “Sustainable Manufacturing Performance Evaluation: Integrating Product and Process Metrics for Systems Level Assessment,” Procedia Manufacturing, vol. 8, pp. 563–570, 2017.
+
+The following _Indicator Sets_ have been reviewed but can not be included in this catalog:
+
+| Reference  | Review Result |
+| ------------- | ------------- |
+| TBD.  | TBD.  |
+
+
+For inclusion of your sustainability assessmenet framework please open an [Issue]() and make sure you can sign a Contributors License Agreement.
 
 ## Preliminary User Roles
 
-![Initial set of user roles for the ProMUT Indicator Repository](https://gitlab.iass.lcl/mrg/pmir/raw/master/proposal-user-groups-and-tasks.png?inline=false)
+![Initial set of user roles for the ProMUT Indicator Repository](https://github.com/mukil/pmir/raw/master/proposal-user-groups-and-tasks.png)
 
 ## Linked Open Data
 
-Linked Open Data is open data that uses the Linked Data Principles ([Berners-Lee, 2006](https://www.w3.org/DesignIssues/LinkedData.html)):
+Linked Data is open data that employs the following principles ([Berners-Lee, 2006](https://www.w3.org/DesignIssues/LinkedData.html)):
 
 1. Use URIs as names for things
 1. Use HTTP URIs so that people can look up those names
@@ -98,3 +124,41 @@ Other RDF contents (`.rdf` files) in this repository are licensed under the orig
 # Copyright
 
 Copyright (C) 2019 Malte Reißig
+
+# References
+
+The system for the repositories model, including its reference frames and categories were developed based on the ideas presented in the following literature (presented here in chronological order):
+
+- A. Tolk and J. Muguira, The Levels of Conceptual Interoperability Model, 2003.
+
+- R. B. Gibson and S. Hassan, Sustainability assessment: Criteria and processes. London: Earthscan, 2005.
+
+- D. Brandl, “What is ISA-95? Industrial Best Practices of Manufacturing Information Technologies with ISA-95 Models,” ISA 95 Editor, May. 19 2008.
+
+- Z. Bi, “Revisiting System Paradigms from the Viewpoint of Manufacturing Sustainability,” Sustainability, vol. 3, no. 9, pp. 1323–1340, 2011.
+
+- T. Lu et al., “A Framework of Product and Process Metrics for Sustainable Manufacturing,” in Advances in Sustainable Manufacturing: Proceedings of the 8th Global Conference on Sustainable Manufacturing, G. Seliger, M. M.K. Khraisheh, and I. S. Jawahir, Eds., Berlin, Heidelberg: Springer-Verlag Berlin Heidelberg, 2011, pp. 333–338.
+
+- L. Ghahremanloo, J. A. Thom, and L. Magee, “An ontology derived from heterogeneous sustainability indicator set documents,” in Proceedings of the Seventeenth Australasian Document Computing Symposium on - ADCS '12, Dunedin, New Zealand, 2012, pp. 72–79.
+
+- J. R. Duflou et al., “Towards energy and resource efficient manufacturing: A processes and systems approach,” CIRP Annals, vol. 61, no. 2, pp. 587–609, 2012.
+
+- C. B. Joung, J. Carrell, P. Sarkar, and S. C. Feng, “Categorization of indicators for sustainable manufacturing,” Ecological Indicators, vol. 24, pp. 148–157, 2013.
+
+- D. Chen, T. Schudeleit, G. Posselt, and S. Thiede, “A State-of-the-art Review and Evaluation of Tools for Factory Sustainability Assessment,” Procedia CIRP, vol. 9, pp. 85–90, 2013.
+
+- S. Sala, B. Ciuffo, and P. Nijkamp, “A systemic framework for sustainability assessment,” Ecological Economics, vol. 119, pp. 314–325, 2015.
+
+- M. Mani, J. Larborn, B. Johansson, K. W. Lyons, and K. C. Morris, “Standard Representations for Sustainability Characterization of Industrial Processes,” J. Manuf. Sci. Eng, vol. 138, no. 10, p. 101008, 2016.
+
+- A. Brodsky, M. Krishnamoorthy, W. Z. Bernstein, and M. O. Nachawati, “A system and architecture for reusable abstractions of manufacturing processes,” in 2016 IEEE International Conference on Big Data: Dec 05-Dec 08, 2015, Washington D.C., USA : proceedings, Washington DC,USA, 2016, pp. 2004–2013.
+
+- P. Sarkar, C. B. Joung, J. Carrell, and S. C. Feng, “Sustainable Manufacturing Indicator Repository,” in Proceedings of the ASME International Design Engineering Technical Conferences and Computers and Information in Engineering Conference - 2011: Presented at ASME 2011 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference, August 28 - 31, 2011, Washington, D.C, Washington, DC, USA, 2012, pp. 943–950.
+
+- A. Moldavska and T. Welo, “On the Applicability of Sustainability Assessment Tools in Manufacturing,” Procedia CIRP, vol. 29, pp. 621–626, 2015.
+
+- A. Huang and F. Badurdeen, “Sustainable Manufacturing Performance Evaluation: Integrating Product and Process Metrics for Systems Level Assessment,” Procedia Manufacturing, vol. 8, pp. 563–570, 2017.
+
+- S. Ahmad and K. Y. Wong, “Sustainability assessment in the manufacturing industry: A review of recent studies,” Benchmarking, vol. 25, no. 8, pp. 3162–3179, 2018.
+
+- V. Bhakar, A. K. Digalwar, and K. S. Sangwan, “Sustainability Assessment Framework for Manufacturing Sector – A Conceptual Model,” Procedia CIRP, vol. 69, pp. 248–253, 2018
