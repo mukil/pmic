@@ -17,19 +17,18 @@ Designated contents of the ProMUT Indicator Repository are indicator sets which 
 The following _Indicator Sets_ are currently analyzed in depth and transformed into LOD to be included in the repository:
 
 * [OECD Sustainable Manufacturing Toolkit](https://www.oecd.org/innovation/green/toolkit/oecdsustainablemanufacturingindicators.htm) (2011)
-* [GRI Standard + Sector Specifics](https://www.globalreporting.org/standards/gri-standards-download-center)
 * [EMAS III Core Indicators](https://www.emas.de/fileadmin/user_upload/06_service/PDF-Dateien/UGA_Infosheet_Indicators.pdf) (2019)
+* [GRI Standard + Sector Specifics](https://www.globalreporting.org/standards/gri-standards-download-center)
 
 ## Submissions
 
 The following _Indicator Sets_ are currently in review for their potential inclusion into this repository:
-* [GWÖ Matrix](https://www.ecogood.org/de/unsere-arbeit/gemeinwohl-bilanz/gemeinwohl-matrix/)
 * [ISO 14955 - Environmental evaluation of machine tools](https://www.beuth.de/en/standard/iso-14955-1/282481423)
 * [GWÖ Matrix](https://www.ecogood.org/de/unsere-arbeit/gemeinwohl-bilanz/gemeinwohl-matrix/)
+* GM Metrics for Sustainable Manufacturing
 * Dow Jones Sustainability Index
 * ITT Flygt Sustainability Index
 * Composite Sustainable Development Index
-* GM Metrics for Sustainable Manufacturing
 * Standard Guide for Characterizing Environmental Aspects of Manufacturing Processes, 2016.
 * A. Brown, J. Amundson, and F. Badurdeen, “Sustainable value stream mapping (Sus-VSM) in different manufacturing system configurations: Application case studies,” Journal of Cleaner Production, vol. 85, pp. 164–179, 2014.
 * J. R. Duflou et al., “Towards energy and resource efficient manufacturing: A processes and systems approach,” CIRP Annals, vol. 61, no. 2, pp. 587–609, 2012.
