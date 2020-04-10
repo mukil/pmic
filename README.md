@@ -1,130 +1,85 @@
 
 # ProMUT Manufacturing Indicator Catalog
 
-The ProMUT Manufacturing Indicator Catalog is a Linked Open Data (LOD) set to integrate and relate indicators across various sustainability assessment “tools” through introducing common reference frames and relational semantics.
+The ProMUT Indicator Catalog is a research & development effort to integrate and relate indicators and indicator categories from different sustainability assessment frameworks. It currently consists of the following elements:
 
-It is collaborative research & development effort to adress a set of research gaps. The initial idea for this repository was developed as a contribution to the [EnvirInfo 2019](https://enviroinfo2019.org/) workshop on the [Future of Environmental Informatics Research from the Perspective of Young Researchers](https://enviroinfo2019.org/workshops/#track3).
+- `rdf` - Folder of RDF/XML files describing the sustainability frameworks
+- `csv` - Folder of CSV files describing the sustainability frameworks for import into the authoring environment
+- `prototype` - A software prototype realized as a plugin for the dmx-platform as collaborative authoring environment
+- `docs` - Files documenting the workflow for collaborative research on the repository
 
-## Content Selection Criteria
+## Catalog Entities
 
-Designated contents of the ProMUT Indicator Repository are indicator sets which embrace the legal aspects of this repository and meet the following four criteria:
+-  Reference Frame (System Assessment Levels)
+-  Sustainability Dimension
+-  Life-Cycle Phase
+-  Indicator Set
+-  Indicator Category
+-  Indicator
+
+## Indicator Sets: Selection Criteria
+
+Designated contents of the ProMUT Indicator Catalog are indicator sets which embrace the legal aspects of this repository and meet the following four criteria:
 
 1. Contains indicators applicable for assessing the sustainability of manufacturing processes or manufactured products.
 1. Published accessibly in some form of document and with a complete description of all indicators (or the will to do so here).
 1. Content imposes no legal restrictions conflicting with the principles of LOD, in particular allowing the contents redistribution.
 1. TBD.
 
-The following _Indicator Sets_ are currently analyzed in depth and transformed into LOD to be included in the repository:
+The following _Indicator Sets_ are currently subject of an ongoing analysis and are included in this repository (see `/csv` folder):
 
+Enterprise & Factory Level:<br/>
+* [GRI Standard + Sector Specifics](https://www.globalreporting.org/standards/gri-standards-download-center)
 * [OECD Sustainable Manufacturing Toolkit](https://www.oecd.org/innovation/green/toolkit/oecdsustainablemanufacturingindicators.htm) (2011)
 * [EMAS III Core Indicators](https://www.emas.de/fileadmin/user_upload/06_service/PDF-Dateien/UGA_Infosheet_Indicators.pdf) (2019)
-* [GRI Standard + Sector Specifics](https://www.globalreporting.org/standards/gri-standards-download-center)
 
-## Submissions
+The following _Indicator Sets_ are also subject of analysis but can not be included in this repository due to accessibility issues or license restrictions:
 
-The following _Indicator Sets_ are currently in review for their potential inclusion into this repository:
+Machine Tool Level:<br/>
 * [ISO 14955 - Environmental evaluation of machine tools](https://www.beuth.de/en/standard/iso-14955-1/282481423)
-* [GWÖ Matrix](https://www.ecogood.org/de/unsere-arbeit/gemeinwohl-bilanz/gemeinwohl-matrix/)
+
+The next _Indicator Sets_ are currently in review / under consideration for their potential integraton into the catalog:
+
 * GM Metrics for Sustainable Manufacturing
 * Dow Jones Sustainability Index
 * ITT Flygt Sustainability Index
+* Organizational Environmental Performance Indicators
 * Composite Sustainable Development Index
-* Standard Guide for Characterizing Environmental Aspects of Manufacturing Processes, 2016.
-* A. Brown, J. Amundson, and F. Badurdeen, “Sustainable value stream mapping (Sus-VSM) in different manufacturing system configurations: Application case studies,” Journal of Cleaner Production, vol. 85, pp. 164–179, 2014.
-* J. R. Duflou et al., “Towards energy and resource efficient manufacturing: A processes and systems approach,” CIRP Annals, vol. 61, no. 2, pp. 587–609, 2012.
-* A. Huang and F. Badurdeen, “Sustainable Manufacturing Performance Evaluation: Integrating Product and Process Metrics for Systems Level Assessment,” Procedia Manufacturing, vol. 8, pp. 563–570, 2017.
+* Standard Guide for Characterizing Environmental Aspects of Manufacturing Processes (2016)
 
-The following _Indicator Sets_ have been reviewed but can not be included in this catalog:
+For inclusion of additional sustainability assessmenet framework please open an [Issue](https://github.com/mukil/pmic/issues).
 
-| Reference  | Review Result |
-| ------------- | ------------- |
-| TBD.  | TBD.  |
+## Version History
 
+**0.3**, UPCOMING
 
-For inclusion of your sustainability assessmenet framework please open an [Issue]() and make sure you can sign a Contributors License Agreement.
-
-## Preliminary User Roles
-
-![Initial set of user roles for the ProMUT Indicator Repository](https://github.com/mukil/pmir/raw/master/proposal-user-groups-and-tasks.png)
-
-## Linked Open Data
-
-Linked Data is open data that employs the following principles ([Berners-Lee, 2006](https://www.w3.org/DesignIssues/LinkedData.html)):
-
-1. Use URIs as names for things
-1. Use HTTP URIs so that people can look up those names
-1. When someone looks up a URI, provide useful information, using the standards (RDF, SPARQL)
-1. Include links to other URIs, so that they can discover more things
-
-Q: Is your Linked Open Data 5 Star?<br/>
-A: TBD.
-
-Q: What is your understanding of Open Data?<br/>
-A: TBD.
-
-## Organizational Aspects
-
-"_Adoption of Linked Open Data is not just a question of technology._ analyzed a set of existing LOD life cycle models wich show that a set of processes must be in place in order for LOD publications to be possible and sustainable over time. From the organizational point of view responsibilities for these processes should be defined and therefore we introduced a model of LOD stakeholder roles." (p.24, [Kučera et al, 2013](https://www.tib.eu/en/search/id/tema%3ATEMA20170113382/Linked-open-data-stakeholder-roles/))
-
-### Stakeholder Roles
-
-Following Kučera et al ([2013](https://www.tib.eu/en/search/id/tema%3ATEMA20170113382/Linked-open-data-stakeholder-roles/)) one can assume some or all of the following organizational responsibilities to be involved in the application of Linked Open Data.
-
-* LOD Evangelist, Domain Expert, Ontology/Designer, Data Owner, Legal Expert
-* Data Curator, LD Transformer, Data Linker, LD Publisher, LD Verifier
-* Catalog Owner, Catalog Editor, Catalog Publisher
-* LD User
-
-### LOD Life Cycles
-
-After analyzing several models of LOD life cycles Kučera et al ([2013](https://www.tib.eu/en/search/id/tema%3ATEMA20170113382/Linked-open-data-stakeholder-roles/)) came up with the following activity names associated with LOD application: 
-
-Raising LOD awareness, Data identification/selection, Data modeling and ontology design, URI design, Extraction/Conversion, Storage, Authoring, Data Quality Assurance, Interlinking, Enrichment, Licensing, Verification, Metadata creation, Publication, Cataloging, Cataloging standardization, Metadata quality assurance, Catalog records publication, Data maintenance, Metadata maintenance, Exploitation
-
-## Technological Aspects
-
-I am currently in search for a RDF Store and SPARQL Server to start with and publish the repository. As all RDF stores are interoperable there is no need to fixate on one specific solution.
-
-_In contrast to a relational data store, an RDF storue includes a fundamental capability, the ability to merge two datasets together. Any resources with the same URI are considered to be equivalent in the merged data set._ (Allemang and Hendler, 2011)
-
-### Current Candidates
-
-* Python RDFLib (https://rdflib.readthedocs.io/en/stable/) + Berkeley DB (https://www.oracle.com/database/technologies/related/berkeleydb-downloads.html) or AllegroGraph(https://franz.com/agraph/support/documentation/current/python/tutorial/example001.html)
-* Eclpise RDF4J (https://rdf4j.eclipse.org)
-* Apache Jena TDB2 (https://jena.apache.org/documentation/tdb2/ + Fuseki2 (https://jena.apache.org/documentation/fuseki2/)
-* Apache Rya (http://rya.apache.org/documentation/) + Apache Accumulo(https://accumulo.apache.org/)
-
-### Preferred Syntax
-
-Currently the ProMUT Indicator Repository Model is solely written RDF/XML style.
-
-## Legal Aspects
-
-TBD.
-
-# Version History
+-  Prototype implementation of a collaborative authoring environment for managing a reference implementaton of the catalog data using a web-based collaboration environment
 
 **0.2**, UPCOMING
 
-* Initial write up of the repository model as an RDF Schema / OWL Document
+-  Initial write up of the repository model as an RDF Schema / OWL Document
 
-# Acknowledgement
+## Background
+
+The initial idea for this repository was developed as a contribution to the [EnvirInfo 2019](https://enviroinfo2019.org/) workshop on the [Future of Environmental Informatics Research from the Perspective of Young Researchers](https://enviroinfo2019.org/workshops/#track3).
+
+## Acknowledgement
 
 The [Junior Research Group “ProMUT”](https://purl.org/promut) (grant number: 01UU1705A) is funded by the German Federal Ministry of Education and Research as part of its funding initiative “[Social-Ecological Research](https://twitter.com/soef_BMBF)“).
 
-# License
+## Licenses
 
-The `Indicator-Repository-Model.rdf` is available freely under the GNU Affero General Public License, version 3.
+The `rdf/Indicator-Repository-Model.rdf` is available freely under the GNU Affero General Public License, version 3.
 
 Other RDF contents (`.rdf` files) in this repository are licensed under the original license provided by the owner of the applicable content. The owner of the applicable content is the following, as denoted in the penultimate part of each concepts URI:
 
 * Every concept in the namespace `https://purl.org/promut/repository/oecd/` is based on the "OECD (2011), OECD Sustainable Manufacturing Toolkit Start-up Guide: Seven steps to environmental excellence, https://www.oecd.org/innovation/green/toolkit/48704993.pdf".
 
-# Copyright
+## Copyright
 
-Copyright (C) 2019 Malte Reißig
+Copyright (C) 2019-2020 Malte Reißig
 
-# References
+## Literature
 
 The system for the repositories model, including its reference frames and categories were developed based on the ideas presented in the following literature (presented here in chronological order):
 
@@ -139,6 +94,8 @@ The system for the repositories model, including its reference frames and catego
 - T. Lu et al., “A Framework of Product and Process Metrics for Sustainable Manufacturing,” in Advances in Sustainable Manufacturing: Proceedings of the 8th Global Conference on Sustainable Manufacturing, G. Seliger, M. M.K. Khraisheh, and I. S. Jawahir, Eds., Berlin, Heidelberg: Springer-Verlag Berlin Heidelberg, 2011, pp. 333–338.
 
 - L. Ghahremanloo, J. A. Thom, and L. Magee, “An ontology derived from heterogeneous sustainability indicator set documents,” in Proceedings of the Seventeenth Australasian Document Computing Symposium on - ADCS '12, Dunedin, New Zealand, 2012, pp. 72–79.
+
+- A. Brown, J. Amundson, and F. Badurdeen, “Sustainable value stream mapping (Sus-VSM) in different manufacturing system configurations: Application case studies,” Journal of Cleaner Production, vol. 85, pp. 164–179, 2014.
 
 - J. R. Duflou et al., “Towards energy and resource efficient manufacturing: A processes and systems approach,” CIRP Annals, vol. 61, no. 2, pp. 587–609, 2012.
 
