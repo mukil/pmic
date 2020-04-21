@@ -1,6 +1,34 @@
 {
+    "topic_types": [
+        {
+            "value": "Mapping Descripion",
+            "uri": "info.promut.mapping_descr",
+            "dataTypeUri": "dmx.core.html",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Weight in Category",
+            "uri": "info.promut.weight_in_category",
+            "dataTypeUri": "dmx.core.number",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        }
+    ],
     "assoc_types": [
-         {
+        {
             "value": "Categorizes",
             "uri": "info.promut.categorizes",
             "dataTypeUri": "dmx.core.composite",
@@ -31,365 +59,7 @@
                     }
                 }
             ]
-        }
-    ],
-    "topic_types": [
-        {
-            "value": "Indicator Name",
-            "uri": "info.promut.indicator_name",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
         },
-        {
-            "value": "Indicator Description",
-            "uri": "info.promut.indicator_descr",
-            "dataTypeUri": "dmx.core.html",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Indicator Formula",
-            "uri": "info.promut.indicator_formula",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Indicator Category",
-            "uri": "info.promut.indicator_category",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf02a"
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Indicator URI",
-            "uri": "info.promut.indicator_uri",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Indicator",
-            "uri": "info.promut.indicator",
-            "dataTypeUri": "dmx.core.identity",
-            "compDefs": [
-                {
-                    "childTypeUri": "info.promut.indicator_name",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": true
-                },
-                {
-                    "childTypeUri": "info.promut.indicator_formula",
-                    "childCardinalityUri": "dmx.core.one"
-                },
-                {
-                    "childTypeUri": "info.promut.indicator_uri",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": false
-                },
-                {
-                    "childTypeUri": "info.promut.indicator_descr",
-                    "childCardinalityUri": "dmx.core.one"
-                },
-                {
-                    "childTypeUri": "info.promut.indicator_category",
-                    "customAssocTypeUri": "info.promut.categorizes",
-                    "childCardinalityUri": "dmx.core.many"
-                }
-            ],
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.color": "#4BC3C3",
-                        "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf02a"
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Indicator Set Name",
-            "uri": "info.promut.set_name",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Indicator Set Description",
-            "uri": "info.promut.set_descr",
-            "dataTypeUri": "dmx.core.html",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        
-        {
-            "value": "Indicator Set URI",
-            "uri": "info.promut.set_uri",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Indicator Set",
-            "uri": "info.promut.indicator_set",
-            "dataTypeUri": "dmx.core.identity",
-            "compDefs": [
-                {
-                    "childTypeUri": "info.promut.set_name",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": true
-                },
-                {
-                    "childTypeUri": "info.promut.set_descr",
-                    "childCardinalityUri": "dmx.core.one"
-                },
-                {
-                    "childTypeUri": "info.promut.set_uri",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": false
-                }
-            ],
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.color": "#C3554B",
-                        "dmx.webclient.color#dmx.webclient.background_color": "#FDEEED",
-                        "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf084"
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Reference Frame Name",
-            "uri": "info.promut.reference_name",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Reference Frame URI",
-            "uri": "info.promut.reference_uri",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Reference Frame Descripion",
-            "uri": "info.promut.reference_descr",
-            "dataTypeUri": "dmx.core.html",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-                {
-            "value": "Reference Frame",
-            "uri": "info.promut.reference_frame",
-            "dataTypeUri": "dmx.core.identity",
-            "compDefs": [
-                {
-                    "childTypeUri": "info.promut.reference_name",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": true
-                },
-                {
-                    "childTypeUri": "info.promut.reference_uri",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": false
-                },
-                {
-                    "childTypeUri": "info.promut.reference_descr",
-                    "childCardinalityUri": "dmx.core.one"
-                }
-            ],
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.color": "#DBA333",
-                        "dmx.webclient.color#dmx.webclient.background_color": "#FDF8ED",
-                        "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf0ae"
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Mapping Descripion",
-            "uri": "info.promut.mapping_descr",
-            "dataTypeUri": "dmx.core.html",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Weight in Category",
-            "uri": "info.promut.weight_in_category",
-            "dataTypeUri": "dmx.core.number",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Sustainability Dimension Name",
-            "uri": "info.promut.dimension_name",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Sustainability Dimension URI",
-            "uri": "info.promut.dimension_uri",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Sustainability Dimension Descripion",
-            "uri": "info.promut.dimension_descr",
-            "dataTypeUri": "dmx.core.html",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Sustainability Dimension",
-            "uri": "info.promut.sustainability_dimension",
-            "dataTypeUri": "dmx.core.identity",
-            "compDefs": [
-                {
-                    "childTypeUri": "info.promut.dimension_name",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": true
-                },
-                {
-                    "childTypeUri": "info.promut.dimension_uri",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": false
-                },
-                {
-                    "childTypeUri": "info.promut.dimension_descr",
-                    "childCardinalityUri": "dmx.core.one"
-                }
-            ],
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.color": "#DBA333",
-                        "dmx.webclient.color#dmx.webclient.background_color": "#FDF8ED",
-                        "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf0ae"
-                    }
-                }
-            ]
-        }
-    ],
-    "assoc_types": [
         {
             "value": "Exact Match",
             "uri": "org.w3.skos.exactMatch",

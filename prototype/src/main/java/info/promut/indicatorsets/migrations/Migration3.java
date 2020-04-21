@@ -12,7 +12,7 @@ import systems.dmx.core.AssocType;
 import systems.dmx.core.TopicType;
 import systems.dmx.core.service.accesscontrol.SharingMode;
 
-public class Migration2 extends Migration {
+public class Migration3 extends Migration {
 
     private Logger logger = Logger.getLogger(getClass().getName());
 

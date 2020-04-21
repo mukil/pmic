@@ -1,29 +1,25 @@
-# dmx-classification-systems
+# ProMUT Indicator Catalog
 
-A repository for research with/on international statistic classification systems.
+A DMX plugin for collaborative authoring of _skos:semanticRelations_ between sustainability indicators (treated as skos:Concepts), indicator categories, sustainability dimensions and reference frames across manufacturing oriented sustainability assessment frameworks.
 
 ## Issues
 
-Issues are tracked on this repositories public mirror at [github.com](https://github.com/mukil/dmx-classifications) for world wide read/write access.
+Issues for this repositories are tracked at its public mirror at [github.com](https://github.com/mukil/pmir) for world wide read/write access.
 
 ## Release History
 
-**1.0.1**, Upcoming
+**0.1.0**, Upcoming
 
-* Improvements for using this plugin in a multi-user installation
-**  Introduced a confidential "Classification Systems" workspace
-**  Moved all top-level topic types into the new confidential workspace 
-
-**1.0.0**, Dec 17, 2019
-
-* Introduces Application Model:<br/>
-  Topic Types: _Classification_, _Classification System_, _Category_<br/>
-  Assoc Types: _Equivalence_, _Similar_, _Defines_, _Contains_, _Categorizes_<br/>
-* Compatible with DMX 5.0-beta-6
+*  Introduced a confidential "PorMUT Indicator Sets" workspace
+*  Moved all top-level topic types into the new confidential workspace 
+*  Introduces Application Model:<br/>
+   Topic Types: _Indicator_, _Indicator Set_, _Reference Frame_, _Sustainability Dimension_<br/>
+   Assoc Types: _Exact Match_, _Close Match_, _Narrow Match_, _Related Match_, _Defines_, _Categorizes_<br/>
+*  Compatible with DMX 5.0-beta-7
 
 ## Author
 
-Copyright (C) Malte Reißig, 2019
+Copyright (C) Malte Reißig, 2020
 
 ## Acknowledgement
 
