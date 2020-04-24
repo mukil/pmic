@@ -1,6 +1,113 @@
 {
     "topic_types": [
         {
+            "value": "System Name",
+            "uri": "info.promut.system_name",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "System Definition",
+            "uri": "info.promut.system_definition",
+            "dataTypeUri": "dmx.core.html",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "System Level",
+            "uri": "info.promut.system_level",
+            "dataTypeUri": "dmx.core.identity",
+            "compDefs": [
+                {
+                    "childTypeUri": "info.promut.system_name",
+                    "childCardinalityUri": "dmx.core.one",
+                    "isIdentityAttr": true,
+                    "includeInLabel": true
+                },
+                {
+                    "childTypeUri": "info.promut.system_definition",
+                    "childCardinalityUri": "dmx.core.one"
+                }
+            ],
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#DBA333",
+                        "dmx.webclient.add_to_create_menu": false,
+                        "dmx.webclient.icon": "\uf0fe"
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Dimension Name",
+            "uri": "info.promut.dimension_name",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Dimension Definition",
+            "uri": "info.promut.dimension_descr",
+            "dataTypeUri": "dmx.core.html",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Sustainability Dimension",
+            "uri": "info.promut.sustainability_dimension",
+            "dataTypeUri": "dmx.core.identity",
+            "compDefs": [
+                {
+                    "childTypeUri": "info.promut.dimension_name",
+                    "childCardinalityUri": "dmx.core.one",
+                    "isIdentityAttr": true,
+                    "includeInLabel": true
+                },
+                {
+                    "childTypeUri": "info.promut.dimension_descr",
+                    "childCardinalityUri": "dmx.core.one"
+                }
+            ],
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#C3554B",
+                        "dmx.webclient.color#dmx.webclient.background_color": "#FDEEED",
+                        "dmx.webclient.add_to_create_menu": false,
+                        "dmx.webclient.icon": "\uf111"
+                    }
+                }
+            ]
+        },
+        {
             "value": "Indicator Name",
             "uri": "info.promut.indicator_name",
             "dataTypeUri": "dmx.core.text",
@@ -40,6 +147,32 @@
             ]
         },
         {
+            "value": "Indicator Type",
+            "uri": "info.promut.indicator_type",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Indicator Objective",
+            "uri": "info.promut.indicator_objective",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
             "value": "Indicator Category",
             "uri": "info.promut.indicator_category",
             "dataTypeUri": "dmx.core.text",
@@ -47,8 +180,10 @@
                 {
                     "typeUri": "dmx.webclient.view_config",
                     "children": {
-                        "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf02a"
+                        "dmx.webclient.color": "#4BC3C3",
+                        "dmx.webclient.color#dmx.webclient.background_color": "#EDFDFD",
+                        "dmx.webclient.add_to_create_menu": false,
+                        "dmx.webclient.icon": "\uf07b"
                     }
                 }
             ]
@@ -78,7 +213,19 @@
                     "includeInLabel": true
                 },
                 {
+                    "childTypeUri": "info.promut.indicator_descr",
+                    "childCardinalityUri": "dmx.core.one"
+                },
+                {
                     "childTypeUri": "info.promut.indicator_formula",
+                    "childCardinalityUri": "dmx.core.one"
+                },
+                {
+                    "childTypeUri": "info.promut.indicator_type",
+                    "childCardinalityUri": "dmx.core.one"
+                },
+                {
+                    "childTypeUri": "info.promut.indicator_objective",
                     "childCardinalityUri": "dmx.core.one"
                 },
                 {
@@ -88,12 +235,12 @@
                     "includeInLabel": false
                 },
                 {
-                    "childTypeUri": "info.promut.indicator_descr",
-                    "childCardinalityUri": "dmx.core.one"
-                },
-                {
                     "childTypeUri": "info.promut.indicator_category",
                     "customAssocTypeUri": "info.promut.categorizes",
+                    "childCardinalityUri": "dmx.core.many"
+                },
+                {
+                    "childTypeUri": "dmx.base.url",
                     "childCardinalityUri": "dmx.core.many"
                 }
             ],
@@ -101,9 +248,9 @@
                 {
                     "typeUri": "dmx.webclient.view_config",
                     "children": {
-                        "dmx.webclient.color": "#4BC3C3",
+                        "dmx.webclient.color": "#B7CF3F",
                         "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf02a"
+                        "dmx.webclient.icon": "\uf0a3"
                     }
                 }
             ]
@@ -111,6 +258,19 @@
         {
             "value": "Indicator Set Name",
             "uri": "info.promut.set_name",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Indicator Set Version",
+            "uri": "info.promut.set_version",
             "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
                 {
@@ -160,173 +320,130 @@
                     "includeInLabel": true
                 },
                 {
+                    "childTypeUri": "info.promut.set_version",
+                    "childCardinalityUri": "dmx.core.one",
+                    "isIdentityAttr": true,
+                    "includeInLabel": true
+                },
+                {
                     "childTypeUri": "info.promut.set_descr",
                     "childCardinalityUri": "dmx.core.one"
+                },
+                {
+                    "childTypeUri": "info.promut.sustainability_dimension",
+                    "customAssocTypeUri": "info.promut.categorizes",
+                    "childCardinalityUri": "dmx.core.many"
                 },
                 {
                     "childTypeUri": "info.promut.set_uri",
                     "childCardinalityUri": "dmx.core.one",
                     "isIdentityAttr": true,
                     "includeInLabel": false
+                },
+                {
+                    "childTypeUri": "dmx.base.url",
+                    "childCardinalityUri": "dmx.core.many"
                 }
             ],
             "viewConfigTopics": [
                 {
                     "typeUri": "dmx.webclient.view_config",
                     "children": {
-                        "dmx.webclient.color": "#C3554B",
-                        "dmx.webclient.color#dmx.webclient.background_color": "#FDEEED",
                         "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf084"
+                        "dmx.webclient.icon": "\uf03a"
                     }
                 }
             ]
+        }
+    ],
+    "topics": [
+        {
+            "typeUri": "info.promut.sustainability_dimension",
+            "uri" : "info.promut.ecological_sustainability",
+            "children": {
+                "info.promut.dimension_name" : "Ecological",
+                "info.promut.dimension_definition": "<p>Sustaining Natural Ecosystems</p>"
+            }
         },
         {
-            "value": "Reference Frame Name",
-            "uri": "info.promut.reference_name",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
+            "typeUri": "info.promut.sustainability_dimension",
+            "uri" : "info.promut.institutional_sustainability",
+            "children": {
+                "info.promut.dimension_name" : "Institutional",
+                "info.promut.dimension_definition": "<p>Sustaining of societies institutions</p>"
+            }
         },
         {
-            "value": "Reference Frame URI",
-            "uri": "info.promut.reference_uri",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
+            "typeUri": "info.promut.sustainability_dimension",
+            "uri" : "info.promut.economical_sustainability",
+            "children": {
+                "info.promut.dimension_name" : "Economical",
+                "info.promut.dimension_definition": "<p>Sustainable Economic Systems</p>"
+            }
         },
         {
-            "value": "Reference Frame Descripion",
-            "uri": "info.promut.reference_descr",
-            "dataTypeUri": "dmx.core.html",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-                {
-            "value": "Reference Frame",
-            "uri": "info.promut.reference_frame",
-            "dataTypeUri": "dmx.core.identity",
-            "compDefs": [
-                {
-                    "childTypeUri": "info.promut.reference_name",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": true
-                },
-                {
-                    "childTypeUri": "info.promut.reference_uri",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": false
-                },
-                {
-                    "childTypeUri": "info.promut.reference_descr",
-                    "childCardinalityUri": "dmx.core.one"
-                }
-            ],
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.color": "#DBA333",
-                        "dmx.webclient.color#dmx.webclient.background_color": "#FDF8ED",
-                        "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf0ae"
-                    }
-                }
-            ]
+            "typeUri": "info.promut.sustainability_dimension",
+            "uri" : "info.promut.social_sustainability",
+            "children": {
+                "info.promut.dimension_name" : "Social",
+                "info.promut.dimension_definition": "<p>Sustaining Natural Ecosystems</p>"
+            }
         },
         {
-            "value": "Sustainability Dimension Name",
-            "uri": "info.promut.dimension_name",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
+            "typeUri": "info.promut.system_level",
+            "uri" : "info.promut.societal_system",
+            "children": {
+                "info.promut.system_name" : "Society",
+                "info.promut.system_definition": "<p>Human Society</p>"
+            }
         },
         {
-            "value": "Sustainability Dimension URI",
-            "uri": "info.promut.dimension_uri",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
+            "typeUri": "info.promut.system_level",
+            "uri" : "info.promut.organizational_system",
+            "children": {
+                "info.promut.system_name" : "Organization",
+                "info.promut.system_definition": "<p>Organization or Enterprise</p>"
+            }
         },
         {
-            "value": "Sustainability Dimension Descripion",
-            "uri": "info.promut.dimension_descr",
-            "dataTypeUri": "dmx.core.html",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                         "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
+            "typeUri": "info.promut.system_level",
+            "uri" : "info.promut.site_system",
+            "children": {
+                "info.promut.system_name" : "Site",
+                "info.promut.system_definition": "<p>Site of an Enterprise or Organization</p>"
+            }
         },
         {
-            "value": "Sustainability Dimension",
-            "uri": "info.promut.sustainability_dimension",
-            "dataTypeUri": "dmx.core.identity",
-            "compDefs": [
-                {
-                    "childTypeUri": "info.promut.dimension_name",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": true
-                },
-                {
-                    "childTypeUri": "info.promut.dimension_uri",
-                    "childCardinalityUri": "dmx.core.one",
-                    "isIdentityAttr": true,
-                    "includeInLabel": false
-                },
-                {
-                    "childTypeUri": "info.promut.dimension_descr",
-                    "childCardinalityUri": "dmx.core.one"
-                }
-            ],
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.color": "#DBA333",
-                        "dmx.webclient.color#dmx.webclient.background_color": "#FDF8ED",
-                        "dmx.webclient.add_to_create_menu": true,
-                        "dmx.webclient.icon": "\uf0ae"
-                    }
-                }
-            ]
+            "typeUri": "info.promut.system_level",
+            "uri" : "info.promut.process_system",
+            "children": {
+                "info.promut.system_name" : "Process",
+                "info.promut.system_definition": "<p>A logical unit within an Organization or a Process</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system_level",
+            "uri" : "info.promut.machine_system",
+            "children": {
+                "info.promut.system_name" : "Machine",
+                "info.promut.system_definition": "<p>One machine tool</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system_level",
+            "uri" : "info.promut.material_system",
+            "children": {
+                "info.promut.system_name" : "Material",
+                "info.promut.system_definition": "<p>A material resource</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system_level",
+            "uri" : "info.promut.human_system",
+            "children": {
+                "info.promut.system_name" : "Human",
+                "info.promut.system_definition": "<p>A human being.</p>"
+            }
         }
     ]
 }

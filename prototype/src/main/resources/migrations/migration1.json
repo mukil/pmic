@@ -55,7 +55,7 @@
                 {
                     "typeUri": "dmx.webclient.view_config",
                     "children": {
-                        "dmx.webclient.color": "#6F57B7"
+                        "dmx.webclient.color": "#4B87C3"
                     }
                 }
             ]
@@ -68,7 +68,7 @@
                 {
                     "typeUri": "dmx.webclient.view_config",
                     "children": {
-                        "dmx.webclient.color": "#6F57B7"
+                        "dmx.webclient.color": "#C3554B"
                     }
                 }
             ]
@@ -87,7 +87,7 @@
                 {
                     "typeUri": "dmx.webclient.view_config",
                     "children": {
-                        "dmx.webclient.color": "#C3554B"
+                        "dmx.webclient.color": "#DBA333"
                     }
                 }
             ]
@@ -100,7 +100,7 @@
                 {
                     "typeUri": "dmx.webclient.view_config",
                     "children": {
-                        "dmx.webclient.color": "#DBA333"
+                        "dmx.webclient.color": "#BB54BB"
                     }
                 }
             ]

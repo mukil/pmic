@@ -1,4 +1,4 @@
-# ProMUT Indicator Catalog
+# ProMUT Indicator Catalog Prototype
 
 A DMX plugin for collaborative authoring of _skos:semanticRelations_ between sustainability indicators (treated as skos:Concepts), indicator categories, sustainability dimensions and reference frames across manufacturing oriented sustainability assessment frameworks.
 

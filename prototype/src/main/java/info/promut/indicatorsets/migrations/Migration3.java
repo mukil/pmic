@@ -27,24 +27,32 @@ public class Migration3 extends Migration {
         Topic csWorkspace = workspaces.createWorkspace(INDICATORS_WS_NAME, INDICATORS_WS_URI, SharingMode.PUBLIC);
         as.setWorkspaceOwner(csWorkspace, AccessControlService.ADMIN_USERNAME);
         // 1) Assign Top Level Topic Types
+        TopicType event = dmx.getTopicType("dmx.events.event");
+        event.getViewConfig().setConfigValue("dmx.webclient.view_config", "dmx.webclient.add_to_create_menu", false);
+        TopicType person = dmx.getTopicType("dmx.contacts.person");
+        person.getViewConfig().setConfigValue("dmx.webclient.view_config", "dmx.webclient.add_to_create_menu", false);
         TopicType indicator = dmx.getTopicType("info.promut.indicator");
         TopicType indicatorSet = dmx.getTopicType("info.promut.indicator_set");
-        TopicType referenceFrame = dmx.getTopicType("info.promut.reference_frame");
+        TopicType indicatorCategory = dmx.getTopicType("info.promut.indicator_category");
+        TopicType referenceFrame = dmx.getTopicType("info.promut.system_level");
         TopicType susDimension = dmx.getTopicType("info.promut.sustainability_dimension");
         AssocType exactMatch = dmx.getAssocType("org.w3.skos.exactMatch");
         AssocType relatedMatch = dmx.getAssocType("org.w3.skos.relatedMatch");
         AssocType narrowerMatch = dmx.getAssocType("org.w3.skos.narrowMatch");
         AssocType closeMatch = dmx.getAssocType("org.w3.skos.closeMatch");
         AssocType categorizes = dmx.getAssocType("info.promut.categorizes");
-        workspaces.assignToWorkspace(indicator, csWorkspace.getId());
-        workspaces.assignToWorkspace(indicatorSet, csWorkspace.getId());
-        workspaces.assignToWorkspace(referenceFrame, csWorkspace.getId());
-        workspaces.assignToWorkspace(susDimension, csWorkspace.getId());
-        workspaces.assignToWorkspace(exactMatch, csWorkspace.getId());
-        workspaces.assignToWorkspace(relatedMatch, csWorkspace.getId());
-        workspaces.assignToWorkspace(narrowerMatch, csWorkspace.getId());
-        workspaces.assignToWorkspace(closeMatch, csWorkspace.getId());
-        workspaces.assignToWorkspace(categorizes, csWorkspace.getId());
+        AssocType defines = dmx.getAssocType("info.promut.defines");
+        workspaces.assignTypeToWorkspace(indicator, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(indicatorSet, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(indicatorCategory, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(referenceFrame, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(susDimension, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(exactMatch, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(relatedMatch, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(narrowerMatch, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(closeMatch, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(categorizes, csWorkspace.getId());
+        workspaces.assignTypeToWorkspace(defines, csWorkspace.getId());
 
     }
 
