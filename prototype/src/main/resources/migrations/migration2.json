@@ -27,7 +27,7 @@
             ]
         },
         {
-            "value": "System Level",
+            "value": "System",
             "uri": "info.promut.system_level",
             "dataTypeUri": "dmx.core.identity",
             "compDefs": [
@@ -410,7 +410,7 @@
             "uri" : "info.promut.site_system",
             "children": {
                 "info.promut.system_name" : "Site",
-                "info.promut.system_definition": "<p>Site of an Enterprise or Organization</p>"
+                "info.promut.system_definition": "<p>Site of an Enterprise or Organization, e.g. a Factory</p>"
             }
         },
         {

@@ -29,10 +29,11 @@ public class IndicatorSetsPlugin extends PluginActivator implements PreCreateAss
     public static final String SYSTEM_LEVEL = "info.promut.system_level";
     public static final String DEFINES = "info.promut.defines";
     public static final String CATEGORIZES = "info.promut.categorizes";
+    public static final String REFERENCES = "info.promut.references";
 
-    @Inject WorkspacesService ws; 
-    @Inject AccessControlService as; 
-    
+    @Inject WorkspacesService ws;
+    @Inject AccessControlService as;
+
     @Override
     public void preCreateAssoc(AssocModel am) {
         if (am.getTypeUri().equals(ASSOCIATION)) {
@@ -40,7 +41,6 @@ public class IndicatorSetsPlugin extends PluginActivator implements PreCreateAss
             PlayerModel player2 = am.getPlayer2();
             DMXObject topic1 = dmx.getObject(player1.getId());
             DMXObject topic2 = dmx.getObject(player2.getId());
-            log.info("preCreateAssoc: topic1: " + topic1.getTypeUri() + ", topic2: " + topic2.getTypeUri());
             if (topic1.getTypeUri().equals(INDICATOR) && topic2.getTypeUri().equals(INDICATOR_SET)) {
                 DMXUtils.associationAutoTyping(am, INDICATOR, INDICATOR_SET, DEFINES, CHILD, PARENT);
             } else if (topic1.getTypeUri().equals(INDICATOR) && topic2.getTypeUri().equals(SUSTAINABILITY_DIMENSION)) {

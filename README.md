@@ -1,30 +1,30 @@
 
 # ProMUT Manufacturing Indicator Catalog
 
-The ProMUT Indicator Catalog is a research & development effort to integrate and relate indicators and indicator categories from different sustainability assessment frameworks. It currently consists of the following elements:
+The ProMUT Manufacturing Indicator Catalog is a research & development effort to integrate and relate indicators and indicator categories from different sustainability assessment frameworks. It currently consists of the following elements:
 
 - `rdf` - Folder of RDF/XML files describing the sustainability frameworks
 - `csv` - Folder of CSV files describing the sustainability frameworks for import into the authoring environment
-- `prototype` - A software prototype realized as a plugin for the dmx-platform as collaborative authoring environment
+- `prototype` - An authoring environment for the catalog realized as a plugin for the dmx-platform
 - `docs` - Files documenting the workflow for collaborative research on the repository
 
 ## Catalog Entities
 
--  Reference Frame (System Assessment Levels)
--  Sustainability Dimension
--  Life-Cycle Phase
--  Indicator Set
+-  System (in Assessment): Society, Organization, Site/Factory, Process, Machine, Material, Human
+-  Sustainability Dimension: Ecological, Economical, Social, Institutional
+-  Indicator Set (for Sustainability Assessment Framework)
 -  Indicator Category
 -  Indicator
 
-## Indicator Sets: Selection Criteria
+To express specific relations between Indicators from and within Indicator Sets, the application proposes to re-use the semantic relations specified in the SKOS Ontology (W3C).
 
-Designated contents of the ProMUT Indicator Catalog are indicator sets which embrace the legal aspects of this repository and meet the following four criteria:
+## Content Selection Criteria
 
-1. Contains indicators applicable for assessing the sustainability of manufacturing processes or manufactured products.
+Designated contents of the ProMUT Indicator Catalog are indicator sets which embrace the legal aspects of this repository and meet the following criteria:
+
+1. Contains indicators applicable for assessing the sustainability of a `System` in regards to at least one `Sustainability Dimension`.
 1. Published accessibly in some form of document and with a complete description of all indicators (or the will to do so here).
 1. Content imposes no legal restrictions conflicting with the principles of LOD, in particular allowing the contents redistribution.
-1. TBD.
 
 The following _Indicator Sets_ are currently subject of an ongoing analysis and are included in this repository (see `/csv` folder):
 
@@ -51,13 +51,11 @@ For inclusion of additional sustainability assessmenet framework please open an 
 
 ## Version History
 
-**0.3**, UPCOMING
+**0.3.0**, 30.06.2020
 
--  Prototype implementation of a collaborative authoring environment for managing a reference implementaton of the catalog data using a web-based collaboration environment
-
-**0.2**, UPCOMING
-
--  Initial write up of the repository model as an RDF Schema / OWL Document
+-  Prototype implementation of a collaborative authoring environment for managing a reference implementaton of the catalog using a web-based collaboration environment (see `/prototype`)
+-  Initial write up of the repository model as an RDF Schema / OWL Document (see `/rdf`)
+-  Initial write up of the resource description of the OECD Sustainable Manufacturing Toolkit (see `/rdf`)
 
 ## Background
 
@@ -81,7 +79,7 @@ Copyright (C) 2019-2020 Malte Reißig
 
 ## Literature
 
-The system for the repositories model, including its reference frames and categories were developed based on the ideas presented in the following literature (presented here in chronological order):
+The catalog's application model and the reference frames ("System Levels") it comes with were derived based on a systematic literature review of the research articles (presented here in chronological order):
 
 - A. Tolk and J. Muguira, The Levels of Conceptual Interoperability Model, 2003.
 
