@@ -93,8 +93,8 @@
             ]
         },
         {
-            "value": "Narrower Match",
-            "uri": "org.w3.skos.narrowMatch",
+            "value": "Broader/Narrower Match",
+            "uri": "org.w3.skos.broadNarrowMatch",
             "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
                 {

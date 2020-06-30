@@ -11,8 +11,8 @@ Issues for this repositories are tracked at its public mirror at [github.com](ht
 
 **0.3.0**, 30.06.2020
 
-*  Introduced a confidential "ProMUT Indicator Sets" workspace
-*  Moved all top-level topic types into the new confidential workspace 
+*  Introduced the "ProMUT Indicator Sets" workspace (Default Sharing Mode: _Public_)
+*  Moved all top-level topic types into the "ProMUT Indicator Sets" workspace 
 *  Introduces Application Model:<br/>
    Topic Types: _Indicator_, _Indicator Set_, _System_, _Sustainability Dimension_<br/>
    Assoc Types: _Exact Match_, _Close Match_, _Narrow Match_, _Related Match_, _Defines_, _Categorizes_<br/>

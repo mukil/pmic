@@ -28,7 +28,7 @@
         },
         {
             "value": "System",
-            "uri": "info.promut.system_level",
+            "uri": "info.promut.system",
             "dataTypeUri": "dmx.core.identity",
             "compDefs": [
                 {
@@ -390,7 +390,7 @@
             }
         },
         {
-            "typeUri": "info.promut.system_level",
+            "typeUri": "info.promut.system",
             "uri" : "info.promut.societal_system",
             "children": {
                 "info.promut.system_name" : "Society",
@@ -398,7 +398,7 @@
             }
         },
         {
-            "typeUri": "info.promut.system_level",
+            "typeUri": "info.promut.system",
             "uri" : "info.promut.organizational_system",
             "children": {
                 "info.promut.system_name" : "Organization",
@@ -406,7 +406,7 @@
             }
         },
         {
-            "typeUri": "info.promut.system_level",
+            "typeUri": "info.promut.system",
             "uri" : "info.promut.site_system",
             "children": {
                 "info.promut.system_name" : "Site",
@@ -414,7 +414,7 @@
             }
         },
         {
-            "typeUri": "info.promut.system_level",
+            "typeUri": "info.promut.system",
             "uri" : "info.promut.process_system",
             "children": {
                 "info.promut.system_name" : "Process",
@@ -422,7 +422,7 @@
             }
         },
         {
-            "typeUri": "info.promut.system_level",
+            "typeUri": "info.promut.system",
             "uri" : "info.promut.machine_system",
             "children": {
                 "info.promut.system_name" : "Machine",
@@ -430,15 +430,15 @@
             }
         },
         {
-            "typeUri": "info.promut.system_level",
-            "uri" : "info.promut.material_system",
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.product_system",
             "children": {
-                "info.promut.system_name" : "Material",
-                "info.promut.system_definition": "<p>A material resource</p>"
+                "info.promut.system_name" : "Product",
+                "info.promut.system_definition": "<p>A product, material or resource bought in.</p>"
             }
         },
         {
-            "typeUri": "info.promut.system_level",
+            "typeUri": "info.promut.system",
             "uri" : "info.promut.human_system",
             "children": {
                 "info.promut.system_name" : "Human",

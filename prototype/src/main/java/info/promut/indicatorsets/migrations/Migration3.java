@@ -34,11 +34,11 @@ public class Migration3 extends Migration {
         TopicType indicator = dmx.getTopicType("info.promut.indicator");
         TopicType indicatorSet = dmx.getTopicType("info.promut.indicator_set");
         TopicType indicatorCategory = dmx.getTopicType("info.promut.indicator_category");
-        TopicType referenceFrame = dmx.getTopicType("info.promut.system_level");
+        TopicType referenceFrame = dmx.getTopicType("info.promut.system");
         TopicType susDimension = dmx.getTopicType("info.promut.sustainability_dimension");
         AssocType exactMatch = dmx.getAssocType("org.w3.skos.exactMatch");
         AssocType relatedMatch = dmx.getAssocType("org.w3.skos.relatedMatch");
-        AssocType narrowerMatch = dmx.getAssocType("org.w3.skos.narrowMatch");
+        AssocType narrowerMatch = dmx.getAssocType("org.w3.skos.broadNarrowMatch");
         AssocType closeMatch = dmx.getAssocType("org.w3.skos.closeMatch");
         AssocType categorizes = dmx.getAssocType("info.promut.categorizes");
         AssocType defines = dmx.getAssocType("info.promut.defines");

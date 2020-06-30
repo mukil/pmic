@@ -40,29 +40,16 @@
             ]
         }
     ],
-    "assoc_types": [
-        {
-            "value": "References",
-            "uri": "info.promut.references",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.color": "#E7E727"
-                    }
-                }
-            ]
-        }
-    ],
     "topics": [
         {
-            "typeUri": "info.promut.system_level",
-            "uri" : "info.promut.product_system",
-            "children": {
-                "info.promut.system_name" : "Product",
-                "info.promut.system_definition": "<p>A service or item to buy.</p>"
-            }
+            "typeUri": "dmx.core.role_type",
+            "uri" : "info.promut.broader",
+            "value": "Broader"
+        },
+        {
+            "typeUri": "dmx.core.role_type",
+            "uri" : "info.promut.narrower",
+            "value": "Narrower"
         }
     ]
 }
