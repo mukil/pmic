@@ -1,45 +1,4 @@
 {
-    "topic_types": [
-         {
-            "value": "Indicator Application Description",
-            "uri": "info.promut.indicator_application_descr",
-            "dataTypeUri": "dmx.core.html",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Measurement Unit",
-            "uri": "info.promut.measurement_unit",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        },
-        {
-            "value": "Target Audience",
-            "uri": "info.promut.target_audience",
-            "dataTypeUri": "dmx.core.text",
-            "viewConfigTopics": [
-                {
-                    "typeUri": "dmx.webclient.view_config",
-                    "children": {
-                        "dmx.webclient.add_to_create_menu": false
-                    }
-                }
-            ]
-        }
-    ],
     "topics": [
         {
             "typeUri": "dmx.core.role_type",

@@ -7,29 +7,44 @@
     <name>ProMUT Indicator Catalog</name>
     <groupId>info.promut</groupId>
     <artifactId>promut-indicator-sets</artifactId>
-    <version>0.3.0</version>
+    <version>0.4.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
     <parent>
         <groupId>systems.dmx</groupId>
         <artifactId>dmx-plugin</artifactId>
-        <version>5.0-beta-7</version>
+        <version>5.0.1</version>
     </parent>
 
-    <!--properties>
+    <properties>
         <dmx.deploy.dir>C:\cygwin64\home\MRG\source\dmx-platform\bundle-deploy</dmx.deploy.dir>
-    </properties-->
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>systems.dmx</groupId>
             <artifactId>dmx-workspaces</artifactId>
-            <version>5.0-beta-7</version>
+            <version>5.0.1</version>
         </dependency>
         <dependency>
             <groupId>systems.dmx</groupId>
             <artifactId>dmx-accesscontrol</artifactId>
-            <version>5.0-beta-7</version>
+            <version>5.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>systems.dmx</groupId>
+            <artifactId>dmx-base</artifactId>
+            <version>5.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>systems.dmx</groupId>
+            <artifactId>dmx-events</artifactId>
+            <version>5.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>systems.dmx</groupId>
+            <artifactId>dmx-contacts</artifactId>
+            <version>5.0.1</version>
         </dependency>
     </dependencies>
 

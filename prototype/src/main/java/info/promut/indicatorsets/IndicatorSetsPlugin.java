@@ -42,25 +42,25 @@ public class IndicatorSetsPlugin extends PluginActivator implements PreCreateAss
             DMXObject topic1 = dmx.getObject(player1.getId());
             DMXObject topic2 = dmx.getObject(player2.getId());
             if (topic1.getTypeUri().equals(INDICATOR) && topic2.getTypeUri().equals(INDICATOR_SET)) {
-                DMXUtils.associationAutoTyping(am, INDICATOR, INDICATOR_SET, DEFINES, CHILD, PARENT);
+                DMXUtils.assocAutoTyping(am, INDICATOR, INDICATOR_SET, DEFINES, CHILD, PARENT);
             } else if (topic1.getTypeUri().equals(INDICATOR) && topic2.getTypeUri().equals(SUSTAINABILITY_DIMENSION)) {
-                DMXUtils.associationAutoTyping(am, INDICATOR, SUSTAINABILITY_DIMENSION, CATEGORIZES, CHILD, PARENT);
+                DMXUtils.assocAutoTyping(am, INDICATOR, SUSTAINABILITY_DIMENSION, CATEGORIZES, CHILD, PARENT);
             } else if (topic1.getTypeUri().equals(INDICATOR) && topic2.getTypeUri().equals(INDICATOR_CATEGORY)) {
-                DMXUtils.associationAutoTyping(am, INDICATOR, INDICATOR_CATEGORY, CATEGORIZES, PARENT, CHILD);
+                DMXUtils.assocAutoTyping(am, INDICATOR, INDICATOR_CATEGORY, CATEGORIZES, PARENT, CHILD);
             } else if (topic2.getTypeUri().equals(INDICATOR) && topic1.getTypeUri().equals(INDICATOR_SET)) {
-                DMXUtils.associationAutoTyping(am, INDICATOR_SET, INDICATOR, DEFINES, PARENT, CHILD);
+                DMXUtils.assocAutoTyping(am, INDICATOR_SET, INDICATOR, DEFINES, PARENT, CHILD);
             } else if (topic2.getTypeUri().equals(INDICATOR) && topic1.getTypeUri().equals(SUSTAINABILITY_DIMENSION)) {
-                DMXUtils.associationAutoTyping(am, SUSTAINABILITY_DIMENSION, INDICATOR, ASSOCIATION, PARENT, CHILD);
+                DMXUtils.assocAutoTyping(am, SUSTAINABILITY_DIMENSION, INDICATOR, ASSOCIATION, PARENT, CHILD);
             } else if (topic2.getTypeUri().equals(INDICATOR) && topic1.getTypeUri().equals(INDICATOR_CATEGORY)) {
-                DMXUtils.associationAutoTyping(am, INDICATOR_CATEGORY, INDICATOR, CATEGORIZES, CHILD, PARENT);
+                DMXUtils.assocAutoTyping(am, INDICATOR_CATEGORY, INDICATOR, CATEGORIZES, CHILD, PARENT);
             } else if (topic2.getTypeUri().equals(INDICATOR_SET) && topic1.getTypeUri().equals(SUSTAINABILITY_DIMENSION)) {
-                DMXUtils.associationAutoTyping(am, SUSTAINABILITY_DIMENSION, INDICATOR, CATEGORIZES, PARENT, CHILD);
+                DMXUtils.assocAutoTyping(am, SUSTAINABILITY_DIMENSION, INDICATOR, CATEGORIZES, PARENT, CHILD);
             } else if (topic1.getTypeUri().equals(INDICATOR_SET) && topic2.getTypeUri().equals(SUSTAINABILITY_DIMENSION)) {
-                DMXUtils.associationAutoTyping(am, INDICATOR, SUSTAINABILITY_DIMENSION, ASSOCIATION, CHILD, PARENT);
+                DMXUtils.assocAutoTyping(am, INDICATOR, SUSTAINABILITY_DIMENSION, ASSOCIATION, CHILD, PARENT);
             } else if (topic2.getTypeUri().equals(INDICATOR) && topic1.getTypeUri().equals(SYSTEM_TYPE)) {
-                DMXUtils.associationAutoTyping(am, SYSTEM_TYPE, INDICATOR, CATEGORIZES, CHILD, PARENT);
+                DMXUtils.assocAutoTyping(am, SYSTEM_TYPE, INDICATOR, CATEGORIZES, CHILD, PARENT);
             } else if (topic1.getTypeUri().equals(INDICATOR) && topic2.getTypeUri().equals(SYSTEM_TYPE)) {
-                DMXUtils.associationAutoTyping(am, INDICATOR, SYSTEM_TYPE, CATEGORIZES, PARENT, CHILD);
+                DMXUtils.assocAutoTyping(am, INDICATOR, SYSTEM_TYPE, CATEGORIZES, PARENT, CHILD);
             }
         }
     }
