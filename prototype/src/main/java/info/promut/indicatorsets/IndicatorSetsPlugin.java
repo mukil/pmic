@@ -20,7 +20,7 @@ public class IndicatorSetsPlugin extends PluginActivator implements PreCreateAss
 
     private Logger log = Logger.getLogger(getClass().getName());
 
-    public static final String INDICATORS_WS_NAME = "ProMUT Indicator Sets";
+    public static final String INDICATORS_WS_NAME = "Indicator Sets";
     public static final String INDICATORS_WS_URI = "info.promut.workspace";
     public static final String INDICATOR = "info.promut.indicator";
     public static final String INDICATOR_SET = "info.promut.indicator_set";

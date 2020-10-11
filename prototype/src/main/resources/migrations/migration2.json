@@ -260,6 +260,19 @@
             ]
         },
         {
+            "value": "Data Source",
+            "uri": "info.promut.data_source",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
             "value": "Indicator Usage Recommendation",
             "uri": "info.promut.indicator_usage",
             "dataTypeUri": "dmx.core.html",
@@ -400,7 +413,7 @@
                 },
                 {
                     "childTypeUri": "info.promut.indicator_audience",
-                    "childCardinalityUri": "dmx.core.one"
+                    "childCardinalityUri": "dmx.core.many"
                 },
                 {
                     "childTypeUri": "info.promut.indicator_formula",
@@ -416,7 +429,7 @@
                 },
                 {
                     "childTypeUri": "info.promut.indicator_type",
-                    "childCardinalityUri": "dmx.core.one"
+                    "childCardinalityUri": "dmx.core.many"
                 },
                 {
                     "childTypeUri": "info.promut.indicator_usage",
@@ -440,15 +453,19 @@
                 },
                 {
                     "childTypeUri": "info.promut.dimension_name",
-                    "childCardinalityUri": "dmx.core.one"
+                    "childCardinalityUri": "dmx.core.many"
                 },
                 {
                     "childTypeUri": "info.promut.system_name",
-                    "childCardinalityUri": "dmx.core.one"
+                    "childCardinalityUri": "dmx.core.many"
                 },
                 {
                     "childTypeUri": "info.promut.indicator_category",
                     "customAssocTypeUri": "info.promut.categorizes",
+                    "childCardinalityUri": "dmx.core.many"
+                },
+                {
+                    "childTypeUri": "info.promut.data_source",
                     "childCardinalityUri": "dmx.core.many"
                 },
                 {
