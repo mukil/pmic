@@ -26,11 +26,12 @@ public class Migration3 extends Migration {
         // 0) Check for WS, Make Sure Custom Plugin Workspace Does Exist
         Topic csWorkspace = workspaces.createWorkspace(INDICATORS_WS_NAME, INDICATORS_WS_URI, SharingMode.PUBLIC);
         as.setWorkspaceOwner(csWorkspace, AccessControlService.ADMIN_USERNAME);
-        // 1) Assign Top Level Topic Types
+        // 1) Hide Top Level Topic Types
         TopicType event = dmx.getTopicType("dmx.events.event");
         event.getViewConfig().setConfigValue("dmx.webclient.view_config", "dmx.webclient.add_to_create_menu", false);
         TopicType person = dmx.getTopicType("dmx.contacts.person");
         person.getViewConfig().setConfigValue("dmx.webclient.view_config", "dmx.webclient.add_to_create_menu", false);
+        // 2) Assign Custom Application Topic Types
         TopicType indicator = dmx.getTopicType("info.promut.indicator");
         TopicType indicatorSet = dmx.getTopicType("info.promut.indicator_set");
         TopicType indicatorCategory = dmx.getTopicType("info.promut.indicator_category");

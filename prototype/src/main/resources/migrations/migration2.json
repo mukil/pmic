@@ -27,7 +27,7 @@
             ]
         },
         {
-            "value": "System",
+            "value": "System Assessment Level",
             "uri": "info.promut.system",
             "dataTypeUri": "dmx.core.entity",
             "compDefs": [
@@ -408,6 +408,14 @@
                     "childCardinalityUri": "dmx.core.one"
                 },
                 {
+                    "childTypeUri": "info.promut.sustainability_dimension",
+                    "childCardinalityUri": "dmx.core.many"
+                },
+                {
+                    "childTypeUri": "info.promut.system",
+                    "childCardinalityUri": "dmx.core.many"
+                },
+                {
                     "childTypeUri": "info.promut.indicator_objective",
                     "childCardinalityUri": "dmx.core.one"
                 },
@@ -416,27 +424,15 @@
                     "childCardinalityUri": "dmx.core.many"
                 },
                 {
+                    "childTypeUri": "info.promut.indicator_type",
+                    "childCardinalityUri": "dmx.core.many"
+                },
+                {
                     "childTypeUri": "info.promut.indicator_formula",
                     "childCardinalityUri": "dmx.core.one"
                 },
                 {
                     "childTypeUri": "info.promut.measurement_unit",
-                    "childCardinalityUri": "dmx.core.one"
-                },
-                {
-                    "childTypeUri": "info.promut.indicator_datasources",
-                    "childCardinalityUri": "dmx.core.one"
-                },
-                {
-                    "childTypeUri": "info.promut.indicator_type",
-                    "childCardinalityUri": "dmx.core.many"
-                },
-                {
-                    "childTypeUri": "info.promut.indicator_usage",
-                    "childCardinalityUri": "dmx.core.one"
-                },
-                {
-                    "childTypeUri": "info.promut.indicator_guidance",
                     "childCardinalityUri": "dmx.core.one"
                 },
                 {
@@ -452,17 +448,21 @@
                     "childCardinalityUri": "dmx.core.one"
                 },
                 {
-                    "childTypeUri": "info.promut.dimension_name",
-                    "childCardinalityUri": "dmx.core.many"
-                },
-                {
-                    "childTypeUri": "info.promut.system_name",
-                    "childCardinalityUri": "dmx.core.many"
-                },
-                {
                     "childTypeUri": "info.promut.indicator_category",
                     "customAssocTypeUri": "info.promut.categorizes",
                     "childCardinalityUri": "dmx.core.many"
+                },
+                {
+                    "childTypeUri": "info.promut.indicator_datasources",
+                    "childCardinalityUri": "dmx.core.one"
+                },
+                {
+                    "childTypeUri": "info.promut.indicator_usage",
+                    "childCardinalityUri": "dmx.core.one"
+                },
+                {
+                    "childTypeUri": "info.promut.indicator_guidance",
+                    "childCardinalityUri": "dmx.core.one"
                 },
                 {
                     "childTypeUri": "info.promut.data_source",
@@ -488,34 +488,34 @@
     "topics": [
         {
             "typeUri": "info.promut.sustainability_dimension",
-            "uri" : "info.promut.ecological_sustainability",
+            "uri" : "info.promut.environmental_sustainability",
             "children": {
-                "info.promut.dimension_name" : "Environmental",
-                "info.promut.dimension_definition": "<p>Sustaining the Natural Environment and Ecosystems</p>"
+                "info.promut.dimension_name" : "Environmental Dimension",
+                "info.promut.dimension_definition": "<p>Sustaining natural environments and ecosystems on planet earth.</p>"
             }
         },
         {
             "typeUri": "info.promut.sustainability_dimension",
             "uri" : "info.promut.institutional_sustainability",
             "children": {
-                "info.promut.dimension_name" : "Institutional",
-                "info.promut.dimension_definition": "<p>Sustaining of societies institutions</p>"
+                "info.promut.dimension_name" : "Institutional Dimension",
+                "info.promut.dimension_definition": "<p>Sustaining of societal institutions.</p>"
             }
         },
         {
             "typeUri": "info.promut.sustainability_dimension",
             "uri" : "info.promut.economical_sustainability",
             "children": {
-                "info.promut.dimension_name" : "Economical",
-                "info.promut.dimension_definition": "<p>Sustainable Economic Systems</p>"
+                "info.promut.dimension_name" : "Economic Dimension",
+                "info.promut.dimension_definition": "<p>Sustainable economics.</p>"
             }
         },
         {
             "typeUri": "info.promut.sustainability_dimension",
             "uri" : "info.promut.social_sustainability",
             "children": {
-                "info.promut.dimension_name" : "Social",
-                "info.promut.dimension_definition": "<p>Sustaining Natural Ecosystems</p>"
+                "info.promut.dimension_name" : "Social Dimension",
+                "info.promut.dimension_definition": "<p>Sustaining societies.</p>"
             }
         },
         {
@@ -523,7 +523,7 @@
             "uri" : "info.promut.societal_system",
             "children": {
                 "info.promut.system_name" : "Society",
-                "info.promut.system_definition": "<p>Human Society</p>"
+                "info.promut.system_definition": "<p>Indicator is concerned with human stakeholders, the societal environmnet of an organization or society as a whole.</p>"
             }
         },
         {
@@ -531,15 +531,23 @@
             "uri" : "info.promut.organizational_system",
             "children": {
                 "info.promut.system_name" : "Organization",
-                "info.promut.system_definition": "<p>Organization or Enterprise</p>"
+                "info.promut.system_definition": "<p>Indicator is concerned with the state or development of a company, enterprise or organization as a system.</p>"
             }
         },
         {
             "typeUri": "info.promut.system",
-            "uri" : "info.promut.site_system",
+            "uri" : "info.promut.building_system",
+            "children": {
+                "info.promut.system_name" : "Building",
+                "info.promut.system_definition": "<p>Indicator is concerned with a building of an organization, e.g. a warehouse 2 in france.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.facility_system",
             "children": {
                 "info.promut.system_name" : "Facility/Site",
-                "info.promut.system_definition": "<p>Site of an Enterprise or Organization, e.g. a Factory</p>"
+                "info.promut.system_definition": "<p>Indicator is concerned with a single facility or site of an organization, e.g. factory 1 in germany.</p>"
             }
         },
         {
@@ -547,15 +555,15 @@
             "uri" : "info.promut.process_system",
             "children": {
                 "info.promut.system_name" : "Process",
-                "info.promut.system_definition": "<p>A logical unit within an Organization or a Process</p>"
+                "info.promut.system_definition": "<p>Indicator is concerned with a logical unit within an organization or any other kind of process</p>"
             }
         },
         {
             "typeUri": "info.promut.system",
             "uri" : "info.promut.cell_group_system",
             "children": {
-                "info.promut.system_name" : "Work Cell/Group",
-                "info.promut.system_definition": "<p>A work cell or group.</p>"
+                "info.promut.system_name" : "Work Cell/Line",
+                "info.promut.system_definition": "<p>Indicator is concerned with a work cell or group.</p>"
             }
         },
         {
@@ -563,7 +571,7 @@
             "uri" : "info.promut.machine_system",
             "children": {
                 "info.promut.system_name" : "Machine/Tool",
-                "info.promut.system_definition": "<p>A single machine or tool</p>"
+                "info.promut.system_definition": "<p>Indicator is concerned with a single machine or tool</p>"
             }
         },
         {
@@ -571,7 +579,15 @@
             "uri" : "info.promut.product_system",
             "children": {
                 "info.promut.system_name" : "Product",
-                "info.promut.system_definition": "<p>A product or material in use.</p>"
+                "info.promut.system_definition": "<p>Indicator is concerned with a product or material in use.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.supplychain_system",
+            "children": {
+                "info.promut.system_name" : "Supply Chain",
+                "info.promut.system_definition": "<p>Indicator is concerned with suppliers, contractors or logistics of resources bought by the organization.</p>"
             }
         },
         {
@@ -579,7 +595,7 @@
             "uri" : "info.promut.human_system",
             "children": {
                 "info.promut.system_name" : "Human",
-                "info.promut.system_definition": "<p>A human being.</p>"
+                "info.promut.system_definition": "<p>Indicator is concerned with one or more human beings within an organization.</p>"
             }
         }
     ]
