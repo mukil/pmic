@@ -1,18 +1,20 @@
 
-# ProMUT Manufacturing Indicator Catalog
+# ProMUT Non-Financial Indicator Catalog
 
-The ProMUT Manufacturing Indicator Catalog is a research & development effort to integrate and relate indicators and indicator categories from different sustainability assessment frameworks. It currently consists of the following elements:
+The ProMUT indicator catalag is a research & development effort to integrate and relate sustainablity performance indicators across reporting standards and management frameworks. 
+
+The repository is organized as follows:
 
 - `rdf` - Folder of RDF/XML files describing the sustainability frameworks
 - `csv` - Folder of CSV files describing the sustainability frameworks for import into the authoring environment
 - `prototype` - An authoring environment for the catalog realized as a plugin for the dmx-platform
 - `docs` - Files documenting the workflow for collaborative research on the repository
 
-## Catalog Entities
+## Application Model: Core Entities
 
--  System (in Assessment): Society, Organization, Site/Factory, Process, Machine, Material, Human
--  Sustainability Dimension: Ecological, Economical, Social, Institutional
--  Indicator Set (for Sustainability Assessment Framework)
+-  System Assessment Level (Society, Organization, Facility/Site, Building, Process, Work Cell/Group, Machine Tool, Product, Human)
+-  Sustainability Dimension (Environmental, Economic, Social, Institutional)
+-  Indicator Set
 -  Indicator Category
 -  Indicator
 
@@ -50,6 +52,13 @@ The next _Indicator Sets_ are currently in review / under consideration for thei
 For inclusion of additional sustainability assessmenet framework please open an [Issue](https://github.com/mukil/pmic/issues).
 
 ## Version History
+
+**0.4.0**, Upcoming
+
+-  Revised _System Assessment Level_ names
+-  Revised prototype
+-  Content updates
+-  Launch of prototype
 
 **0.3.0**, 30.06.2020
 
