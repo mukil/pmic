@@ -22,14 +22,16 @@ public class IndicatorSetsPlugin extends PluginActivator implements PreCreateAss
 
     public static final String INDICATORS_WS_NAME = "Indicator Sets";
     public static final String INDICATORS_WS_URI = "info.promut.workspace";
+    //
     public static final String INDICATOR = "info.promut.indicator";
     public static final String INDICATOR_SET = "info.promut.indicator_set";
     public static final String INDICATOR_CATEGORY = "info.promut.indicator_category";
+    //
     public static final String SUSTAINABILITY_DIMENSION = "info.promut.sustainability_dimension";
-    public static final String SYSTEM_TYPE = "info.promut.system";
+    public static final String SYSTEM_BOUNDARY = "info.promut.system";
+    //
     public static final String DEFINES = "info.promut.defines";
     public static final String CATEGORIZES = "info.promut.categorizes";
-    public static final String REFERENCES = "info.promut.references";
 
     @Inject WorkspacesService ws;
     @Inject AccessControlService as;
@@ -57,10 +59,10 @@ public class IndicatorSetsPlugin extends PluginActivator implements PreCreateAss
                 DMXUtils.assocAutoTyping(am, SUSTAINABILITY_DIMENSION, INDICATOR, CATEGORIZES, PARENT, CHILD);
             } else if (topic1.getTypeUri().equals(INDICATOR_SET) && topic2.getTypeUri().equals(SUSTAINABILITY_DIMENSION)) {
                 DMXUtils.assocAutoTyping(am, INDICATOR, SUSTAINABILITY_DIMENSION, ASSOCIATION, CHILD, PARENT);
-            } else if (topic2.getTypeUri().equals(INDICATOR) && topic1.getTypeUri().equals(SYSTEM_TYPE)) {
-                DMXUtils.assocAutoTyping(am, SYSTEM_TYPE, INDICATOR, CATEGORIZES, CHILD, PARENT);
-            } else if (topic1.getTypeUri().equals(INDICATOR) && topic2.getTypeUri().equals(SYSTEM_TYPE)) {
-                DMXUtils.assocAutoTyping(am, INDICATOR, SYSTEM_TYPE, CATEGORIZES, PARENT, CHILD);
+            } else if (topic2.getTypeUri().equals(INDICATOR) && topic1.getTypeUri().equals(SYSTEM_BOUNDARY)) {
+                DMXUtils.assocAutoTyping(am, SYSTEM_BOUNDARY, INDICATOR, CATEGORIZES, CHILD, PARENT);
+            } else if (topic1.getTypeUri().equals(INDICATOR) && topic2.getTypeUri().equals(SYSTEM_BOUNDARY)) {
+                DMXUtils.assocAutoTyping(am, INDICATOR, SYSTEM_BOUNDARY, CATEGORIZES, PARENT, CHILD);
             }
         }
     }

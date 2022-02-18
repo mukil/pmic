@@ -1,14 +1,84 @@
 {
     "topics": [
         {
-            "typeUri": "dmx.core.role_type",
-            "uri" : "info.promut.broader",
-            "value": "Broader"
+            "typeUri": "info.promut.sustainability_dimension",
+            "uri" : "info.promut.institutional_sustainability",
+            "children": {
+                "info.promut.dimension_name" : "Institutional Dimension",
+                "info.promut.dimension_definition": "<p>Concepts of institutions or institutional characteristics of societies. Usually considered a sub-dimension of the social dimension.</p>"
+            }
         },
         {
-            "typeUri": "dmx.core.role_type",
-            "uri" : "info.promut.narrower",
-            "value": "Narrower"
+            "typeUri": "info.promut.sustainability_dimension",
+            "uri" : "info.promut.technical_sustainability",
+            "children": {
+                "info.promut.dimension_name" : "Technical Dimension",
+                "info.promut.dimension_definition": "<p>Technological attributes categorized as elements or concepts in some sustainability frameworks. Usually considered a sub-dimension of the social dimension</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.digital_artifact",
+            "children": {
+                "info.promut.system_name" : "Digital Artifact",
+                "info.promut.system_definition": "<p>Indicator is concerned with an artifact of information technology, e.g. data or source code.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.source_code",
+            "children": {
+                "info.promut.system_name" : "Source Code",
+                "info.promut.system_definition": "<p>Indicator is concerned with the quailities of a software's architecture or source code.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.data",
+            "children": {
+                "info.promut.system_name" : "Data",
+                "info.promut.system_definition": "<p>Indicator is concerned with the quailities of data.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.software_project",
+            "children": {
+                "info.promut.system_name" : "Software Project",
+                "info.promut.system_definition": "<p>Indicator is concerned with the quailities of a software project, e.g. package, library or application.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.community",
+            "children": {
+                "info.promut.system_name" : "Community",
+                "info.promut.system_definition": "<p>Indicator is concerned with qualities of sustainable communities.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.information_system",
+            "children": {
+                "info.promut.system_name" : "Information System",
+                "info.promut.system_definition": "<p>Indicator is concerned with an organizational-technical system, analog or digital, in application/use.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.platform",
+            "children": {
+                "info.promut.system_name" : "Platform",
+                "info.promut.system_definition": "<p>Indicator is concerned with a platform technology.</p>"
+            }
+        },
+        {
+            "typeUri": "info.promut.system",
+            "uri" : "info.promut.design_procedure",
+            "children": {
+                "info.promut.system_name" : "Systems Design",
+                "info.promut.system_definition": "<p>Indicator is concerned with qualities of system design processes and guidelines.</p>"
+            }
         }
     ]
 }

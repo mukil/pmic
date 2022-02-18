@@ -107,7 +107,7 @@
                 }
             ]
         },
-         {
+        {
             "value": "Indicator Set Name",
             "uri": "info.promut.set_name",
             "dataTypeUri": "dmx.core.text",
